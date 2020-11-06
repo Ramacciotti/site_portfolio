@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<!-- HEAD XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<head>
+
+	<!-- 1. META-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> <!-- Caracteres em português -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Largura da página = largura do dispositivo -->
+	<meta name="description" content="Página criada para treino"/>
+	<meta name="keywords" content="html,css,sql,server"/>
+	<meta name="robots" content="HOME, follow"/> <!--Robôs de busca devem indexar a home e seus links -->
+	<meta name="autor" content="Mariana Ramacciotti"/>
+
+	<!-- 2. ICONE -->
+	<link rel="shortcut icon" type="image/png" href="images/favicon/favicon.ico" />
+    
+	<!-- 3. CARREGAR CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <!-- 4. CARREGAR JAVASCRIPT -->
+    <script type="text/javascript" src="js/javascript.js"></script> 
+
+	<!-- 5. CARREGAR FONTES EXTERNAS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap">
+
+	<!-- 6. TITULO DA PÁGINA-->
+	<title>Mariana Ramacciotti Portfolio</title>
+
+</head>
+
+<!-- BODY XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<body id="BODY">
+
+    <!-- BLOCO | MENU xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
+    <section id="MENU">
+        
+        <!-- LINHA | SUPERIOR [ICONE HAMBURGUER] ---------------------------------------------------------------------------------------------------------------------- --> 
+        <section id="MENU_LINHA_SUPERIOR">
+            <img id="ICONE_MENU" type="button" onclick="ABRIR_MENU()" src="images/svg/icone_menu.svg" alt="MENU" style="width:35px;height:35px;cursor: pointer;"></img>
+        </section>
+
+        <!-- LINHA | INFERIOR [MENU SUSPENSO] ----------------------------------------------------------------------------------------------------------------------- -->  
+        <section id="MENU_LINHA_INFERIOR">
+            
+            <!-- EXIT -->
+            <section id="EXIT">
+                <img id="ICONE_EXIT" type="button" onclick="FECHAR_MENU()" src="images/svg/icone_exit.svg" alt="EXIT"></img>
+            </section>
+
+            <!-- LINKS -->
+            <section id="LINKS_PROJETOS">
+                <ul>
+                    <li class="FONT_BOLD" style="font-size: 24px; color: white">PROJECTS</li><br>
+                    <li class="FONT_REGULAR" style="font-size: 20px; color: white" ><a href="https://play.google.com/store/apps/details?id=com.subliminapp" target="_blank">○ SubliminApp</a></li><br>                 
+                    <li class="FONT_REGULAR" style="font-size: 20px; color: white" ><a href="https://jogosimpacta.itch.io/disclosure" target="_blank">○ Disclosure</a></li><br>
+                    <li class="FONT_REGULAR"style="font-size: 20px; color: white" ><a href="https://www.behance.net/gallery/93620597/Artes-Subliminares-Mariana-Ramacciotti" target="_blank">○ SubliminArt</a></li><br>
+                </ul>                  
+            </section>
+
+            <section id="REDES_SOCIAIS_MENU">
+
+                <!-- BOTAO LINKEDIN -->                   
+                <button type="button" class="BOTOES_REDES_SOCIAIS_MENU">                    
+                    <a href="https://www.linkedin.com/in/marianaramacciotti/" target="_blank">
+                        <img id="ICONE_LINKEDIN" src="images/svg/icone_linkedin.svg" alt="LINKEDIN">
+                    </a>   
+                </button>
+
+                <!-- BOTAO BEHANCE -->                   
+                <button type="button" class="BOTOES_REDES_SOCIAIS_MENU" style="margin-left: 8px">
+                    <a href="https://www.behance.net/marianaramacciotti" target="_blank">
+                        <img id="ICONE_BEHANCE" src="images/svg/icone_behance.svg" alt="BEHANCE">
+                    </a>  
+                </button>
+
+                <!-- BOTAO GITHUB -->                   
+                <button type="button" class="BOTOES_REDES_SOCIAIS_MENU" style="margin-left: 8px">
+                    <a href="https://github.com/Ramacciotti" target="_blank">
+                        <img id="ICONE_GITHUB" src="images/svg/icone_github.svg" alt="GITHUB" >
+                    </a>  
+                </button>
+
+            </section>
+
+        </section>
+        
+    </section>
+
+    <!-- BLOCO | HEADER xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
+    <header id="HEADER"> 
+
+        <!-- LINHA | SUPERIOR [PROGRAMAS, NOME] -------------------------------------------------------------------------------------------------------------------------- --> 
+        <section id="HEADER_LINHA_SUPERIOR">
+
+            <!-- COLUNA | ESQUERDA --> 
+            <section id="SUPERIOR_COLUNA_ESQUERDA">
+
+                <!-- ITEM | PROGRAMAS -->      
+                <p id="ITEM_PROGRAMAS" class="FONT_MEDIUM">Unity | Android Studio | SQL Server Management Studio</p> 
+                
+                <!-- ITEM | TITULO -->      
+                <section id="ITEM_TITULO">
+
+                    <!-- IELEMENTO | NOME -->                 
+                    <h1 id="ELEMENTO_NOME" class="FONT_MEDIUM"  style="font-size:2.5em;">MARIANA</h1> 
+                    <!-- ELEMENTO | SOBRENOME -->    
+                    <h1 id="ELEMENTO_SOBRENOME" class="FONT_EXTRABOLD" style="font-size:2.5em; color:#81E9F4">RAMACCIOTTI</h1>  
+                    <!-- ELEMENTO | FUNCAO -->    
+                    <h3 id="ELEMENTO_FUNCAO" class="FONT_MEDIUM" style="font-size:1.5em;">Developer</h3> 
+                    <!-- ELEMENTO | TRACO -->    
+                    <img id="ELEMENTO_TRACO" src="images/svg/icone_traco.svg" alt="TRACO">  
+
+                </section>                   
+
+            </section>
+
+            <!-- COLUNA | DIREITA --> 
+            <section id="SUPERIOR_COLUNA_DIREITA">
+
+                <!--  ITEM | LINGUAGENS --> 
+                <ul id="ITEM_LINGUAGENS">
+                    <li class="FONT_MEDIUM">C#</li><br>
+                    <li class="FONT_MEDIUM">JAVA</li><br>
+                    <li class="FONT_MEDIUM">HTML5</li><br>
+                    <li class="FONT_MEDIUM">CSS</li><br>
+                    <li class="FONT_MEDIUM">PHP</li><br>
+                    <li class="FONT_MEDIUM">SQL</li><br>
+                </ul>  
+
+            </section>
+
+        </section>
+
+        <!-- LINHA | INFERIOR [PORTFOLIO, ARROW, REDES SOCIAIS] ----------------------------------------------------------------------------------------------------------------------------- --> 
+        <section id="HEADER_LINHA_INFERIOR">            
+            
+            <!-- COLUNA | ESQUERDA --> 
+            <section id="INFERIOR_COLUNA_ESQUERDA">                
+                <p class="FONT_MEDIUM" id="PORTFOLIO">Portfolio</p>
+            </section>
+
+            <!-- COLUNA | CENTRO --> 
+            <section id="INFERIOR_COLUNA_CENTRO">                
+                <img id="ARROW" src="images/svg/icone_arrow.svg" alt="ARROW" style="width:80px;height:38px;">
+            </section>
+
+            <!-- COLUNA | DIREITA --> 
+            <section id="INFERIOR_COLUNA_DIREITA">
+
+                <!-- BOTAO 1 -->                   
+                <button type="button" class="BOTOES_REDES_SOCIAIS">                    
+                    <a href="https://www.linkedin.com/in/marianaramacciotti/" target="_blank">
+                        <img id="ICONE_LINKEDIN" src="images/svg/icone_linkedin.svg" alt="LINKEDIN">
+                    </a>   
+                </button>
+
+                <!-- BOTAO 2 -->                   
+                <button type="button" class="BOTOES_REDES_SOCIAIS"  style="margin-left: 5px">
+                    <a href="https://www.behance.net/marianaramacciotti" target="_blank">
+                        <img id="ICONE_BEHANCE" src="images/svg/icone_behance.svg" alt="BEHANCE">
+                    </a>  
+                </button>
+
+                <!-- BOTAO 3 -->                   
+                <button type="button" class="BOTOES_REDES_SOCIAIS" style="margin-left: 5px">
+                    <a href="https://github.com/Ramacciotti" target="_blank">
+                        <img id="ICONE_GITHUB" src="images/svg/icone_github.svg" alt="GITHUB">
+                    </a>  
+                </button>
+
+               
+            </section>   
+
+        </section>  
+
+    </header>
+
+    <!-- BLOCO | MAIN xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
+    <main id="MAIN">   
+
+        <!-- LINHA | SUPERIOR [TÍTULO PROJECTS] -------------------------------------------------------------------------------------------------- --> 
+        <section id="MAIN_LINHA_SUPERIOR">
+            <h1 id="PROJECTS" class="FONT_BOLD">PROJECTS</h1>
+        </section>
+
+        <!-- LINHA | INFERIOR [BOTÃO SUBLIMINAPP, BOTÃO DISCLOSURE, BOTÃO PROJETO 3] --------------------------------------------------------------------------------------------------- --> 
+        <section id="MAIN_LINHA_INFERIOR">
+
+            <!-- BOTAO SUBLIMINAPP --> 
+            <button id="BOTAO_SUBLIMINAPP" type="button" class="BOTOES_PROJETOS">  
+
+                <a href="https://play.google.com/store/apps/details?id=com.subliminapp" target="_blank">
+                    <img id="ICONE_SUBLIMINAPP" class="BOTOES_PROJETOS_ICONES" src="images/svg/icone_subliminapp.svg" alt="SUBLIMINAPP" style="width:68px;height:68px;">
+                    <h2 id="TITULO_1" class="BOTOES_PROJETOS_TITULOS FONT_SEMIBOLD"> SubliminApp </h2>
+                    <p id="DESCRICAO_1" class="FONT_MEDIUM BOTOES_PROJETOS_DESCRICOES">Google Play App</p> 
+                </a>
+
+            </button>
+
+            <!-- BOTAO DISCLOSURE --> 
+            <button id="BOTAO_DISCLOSURE" type="button" class="BOTOES_PROJETOS">  
+
+                <a href="https://jogosimpacta.itch.io/disclosure" target="_blank">
+                    <img id="ICONE_LOGIN" class="BOTOES_PROJETOS_ICONES" src="images/svg/icone_disclosure.svg" alt="LOGIN" style="width:70px;height:70px;">
+                    <h2 id="TITULO_2" class="BOTOES_PROJETOS_TITULOS FONT_SEMIBOLD">Disclosure</h2>
+                    <p id="DESCRICAO_2" class="FONT_MEDIUM BOTOES_PROJETOS_DESCRICOES">3D Stealth Game</p>
+                </a>
+
+            </button>
+
+            <!-- BOTAO SISTEMA E CADASTRO --> 
+            <button id="BOTAO_SISTEMA_CADASTRO" type="button" class="BOTOES_PROJETOS">  
+
+                <a href="https://ramacciottidatabase.000webhostapp.com/index.php" target="_blank">
+                    <img id="ICONE_LOGIN" class="BOTOES_PROJETOS_ICONES" src="images/svg/icone_login_2.svg" alt="LOGIN" style="width:70px;height:70px;">
+                    <h2 id="TITULO_3" class="BOTOES_PROJETOS_TITULOS FONT_SEMIBOLD">Cadastro / Login</h2>
+                    <p id="DESCRICAO_3" class="FONT_MEDIUM BOTOES_PROJETOS_DESCRICOES">Sistema com Mysql Online</p>
+                </a>
+
+            </button>
+
+            <!-- BOTAO SUBLIMINART -->                 
+            <button id="BOTAO_SUBLIMINART" type="button" class="BOTOES_PROJETOS">  
+
+                <a href="https://www.behance.net/gallery/93620597/Artes-Subliminares-Mariana-Ramacciotti" target="_blank">
+                    <img id="ICONE_LOGIN" class="BOTOES_PROJETOS_ICONES" src="images/svg/icone_subliminart.svg" alt="LOGIN" style="width:70px;height:70px;">
+                    <h2 id="TITULO_4" class="BOTOES_PROJETOS_TITULOS FONT_SEMIBOLD">SubliminArt</h2>
+                    <p id="DESCRICAO_4" class="FONT_MEDIUM BOTOES_PROJETOS_DESCRICOES">Subliminal Illustrations</p>
+                </a>
+
+            </button>     
+
+        </section>
+
+    </main>
+
+    <!-- BLOCO | FOOTER xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  -->
+    <footer id="FOOTER">
+
+        <!-- LINHA | SUPERIOR [ICONES REDES SOCIAIS]-------------------------------------------------------------------------------------------------------------------------- --> 
+        <section id="FOOTER_LINHA_SUPERIOR">
+
+            <p id="ITEM_AUTORA" class="FONT_REGULAR">Developed by Mariana Ramacciotti, 2020</p>
+
+        </section>
+
+    </footer>
+  
+<!-- FIM CÓDIGO XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+</body></html>
+
+
+

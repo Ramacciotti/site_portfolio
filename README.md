@@ -1,2 +1,2 @@
-# site_portfolio
-Criando meu portfolio online.
+# site_portolio
+Compilação de projetos desenvolvidos por Mariana Ramacciotti.

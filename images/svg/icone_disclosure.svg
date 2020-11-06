@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 305.9 348.6" style="enable-background:new 0 0 305.9 348.6;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#FFFFFF;stroke-width:20;stroke-miterlimit:10;}
+	.st1{display:none;fill:#0000B3;}
+	.st2{display:none;opacity:0.24;fill:url(#SVGID_1_);}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:17;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+</style>
+<g>
+	<polygon class="st0" points="152.9,11.5 295.9,93.6 295.9,255.8 152.9,337.1 10,255.8 10,93.3 	"/>
+	<polygon class="st1" points="152.9,11.5 295.9,93.6 295.9,255.8 152.9,337.1 10,255.8 10,93.3 	"/>
+	<radialGradient id="SVGID_1_" cx="152.0397" cy="171.8857" r="153.1733" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="9.637715e-02" style="stop-color:#F9F9FD"/>
+		<stop  offset="0.2206" style="stop-color:#E9E9F9"/>
+		<stop  offset="0.3601" style="stop-color:#CFCFF1"/>
+		<stop  offset="0.5107" style="stop-color:#AAAAE6"/>
+		<stop  offset="0.6703" style="stop-color:#7A7AD7"/>
+		<stop  offset="0.8352" style="stop-color:#4141C6"/>
+		<stop  offset="1" style="stop-color:#0000B3"/>
+	</radialGradient>
+	<polygon class="st2" points="152,9.1 295,91.2 295,253.4 152,334.7 9.1,253.4 9.1,90.9 	"/>
+</g>
+<polygon class="st3" points="152.5,69.8 243.2,121.9 243.2,224.8 152.5,276.3 61.8,224.8 61.8,121.7 "/>
+<g>
+	<path class="st4" d="M114.5,199.4c0,0,23.3,0.2,32.5,0c13.4-0.4,29.7-1.5,31.8-22.1c1.1-10.6,0.6-15.9,0.6-15.9h11.8
+		c0,0,0,5.8,0,8.9c0,8.8-0.3,24.1-11.9,32.4c-6.1,4.4-13.8,7.3-30,7.6c-25.9,0.4-34.8,0-34.8,0V199.4z"/>
+	<path class="st4" d="M190.5,146.8c0,0-23.3-0.2-32.5,0c-13.4,0.4-29.7,1.5-31.8,22.1c-1.1,10.6-0.6,15.9-0.6,15.9h-11.8
+		c0,0,0-5.8,0-8.9c0-8.8,0.3-24.1,11.9-32.4c6.1-4.4,13.8-7.3,30-7.6c25.9-0.4,34.8,0,34.8,0V146.8z"/>
+	<ellipse class="st4" cx="152.8" cy="174.2" rx="8.2" ry="8"/>
+</g>
+</svg>
