@@ -547,11 +547,6 @@
                 #MAIN_LINHA_INFERIOR{
                     flex-direction: column;                     
                 }
-            
-                    /* BOTÃO PROJETOS [SUBLIMINAPP, DISCLOSURE] */
-                    .BOTOES_PROJETOS{
-                        min-width: 230px;
-                    }
                 
             /*#endregion*/
             
