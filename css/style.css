@@ -277,7 +277,7 @@
                         /* II) TÍTULO */
                         #ITEM_TITULO{
                             margin-top: -145px;
-                            margin-bottom:-80px;                
+                            margin-bottom:-80px;           
                         }
         
                         /* III) NOME */
@@ -293,7 +293,7 @@
         
                         /* V) FUNCAO */
                         #ELEMENTO_FUNCAO{
-                            margin-left: 240px;
+                            margin-left: 207px;
                             font-size: 0.75em; 
                         }
         
