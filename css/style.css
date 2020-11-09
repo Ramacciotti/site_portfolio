@@ -162,16 +162,21 @@
                 }
 
                 /* II) ITEM */
-                #BOTAO_DISCLOSURE{
-                    flex: 1;   
-                }
-
-                /* III) ITEM */
                 #BOTAO_SISTEMA_CADASTRO{
                     flex: 1;   
                 }
 
+                /* III) ITEM */
+                #BOTAO_CLIMA{
+                    flex: 1;   
+                }
+
                 /* IV) ITEM */
+                #BOTAO_DISCLOSURE{
+                    flex: 1;   
+                }
+
+                /* V) ITEM */
                 #BOTAO_SUBLIMINART{
                     flex: 1;   
                 }
@@ -651,22 +656,23 @@
 /* RESET | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
     
     /* #region ELEMENTOS xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-         
+      
+    /* IMPORTAR FONTES DO GOOGLE */
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
     * {
         margin: 0;
         padding: 0;
         font-size: 100%;
         border: none;
         outline: none;
-        font-weight: 300;
         box-sizing: border-box;
-        font-family: 'Raleway';        
+        font-family: 'Raleway', sans-serif;
     }
 
     body{
         background-color: var(--VAR_COR_PRIMARIA);  
-        color: white;
-        font-family: 'Raleway', sans-serif;
+        color: white;        
         font-size: 1em;
         padding-left: 40px;
         padding-top: 20px;
@@ -698,7 +704,7 @@
 
 /* #endregion */
 
-/* * VARIÁVEIS | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* VARIAVEIS | XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
 
     /* ROOT */
     :root {
