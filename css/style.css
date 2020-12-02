@@ -155,12 +155,6 @@
                 box-shadow: 11px 10px 10px rgba(0,0,0,0.2); /* POSICAO X | POSICAO Y | BLUR | COR */  
                 background-color: var(--VAR_COR_SECUNDARIA);
             }
-
-                /* I) ITENS */
-                #BOTAO_SUBLIMINAPP, #BOTAO_SISTEMA_CADASTRO, #BOTAO_CLIMA, #BOTAO_DISCLOSURE, #BOTAO_FORMULARIO, #BOTAO_ECOMMERCE, #BOTAO_LOGIN_INSTAGRAM {
-                    flex: 1;  
-                }
-
         /* #endregion */
     
     /* #endregion */
@@ -569,7 +563,8 @@
 
         /* BOTÃO PROJETOS [SUBLIMINAPP, DISCLOSURE] */
         .BOTOES_PROJETOS{                                 
-            max-height: 300px;     
+            max-height: 350px;     
+            min-width: 250px;
             padding-top: 40px;
             padding-bottom: 40px;
             border-radius: 8px;
@@ -577,6 +572,7 @@
             box-shadow: 15px 5px 10px rgba(0,0,0,0.1); /* POSICAO X | POSICAO Y | BLUR | COR */
             background: linear-gradient(0deg, rgba(115,103,240,1) 0%, rgba(129,233,244,1) 75%);
             cursor: pointer; 
+            flex: 1;  
         }
         
         /* BOTÃO PROJETOS > TÍTULOS */
