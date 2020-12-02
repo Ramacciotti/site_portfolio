@@ -156,31 +156,11 @@
                 background-color: var(--VAR_COR_SECUNDARIA);
             }
 
-                /* I) ITEM */
-                #BOTAO_SUBLIMINAPP{
-                    flex: 1;          
+                /* I) ITENS */
+                #BOTAO_SUBLIMINAPP, #BOTAO_SISTEMA_CADASTRO, #BOTAO_CLIMA, #BOTAO_DISCLOSURE, #BOTAO_FORMULARIO, #BOTAO_ECOMMERCE, #BOTAO_LOGIN_INSTAGRAM {
+                    flex: 1;  
                 }
 
-                /* II) ITEM */
-                #BOTAO_SISTEMA_CADASTRO{
-                    flex: 1;   
-                }
-
-                /* III) ITEM */
-                #BOTAO_CLIMA{
-                    flex: 1;   
-                }
-
-                /* IV) ITEM */
-                #BOTAO_DISCLOSURE{
-                    flex: 1;   
-                }
-
-                /* V) ITEM */
-                #BOTAO_SUBLIMINART{
-                    flex: 1;   
-                }
-                    
         /* #endregion */
     
     /* #endregion */
@@ -357,7 +337,7 @@
 
                 /* BOTÃO PROJETOS [SUBLIMINAPP, DISCLOSURE] */
                 .BOTOES_PROJETOS{
-                    min-width: 230px;
+                    min-width: 230px;                    
                 }
                       
             /* #endregion */
@@ -589,7 +569,7 @@
 
         /* BOTÃO PROJETOS [SUBLIMINAPP, DISCLOSURE] */
         .BOTOES_PROJETOS{                                 
-            max-height: 300px; 
+            max-height: 300px;     
             padding-top: 40px;
             padding-bottom: 40px;
             border-radius: 8px;
