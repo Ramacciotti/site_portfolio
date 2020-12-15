@@ -1,0 +1,846 @@
+
+/*  #region | Reset xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root{
+    --cor_background_escuro:#100f17;
+    --cor_background_claro: #15131e; 
+    --cor_paragrafo: #bfbccd;
+    --cor_titulo:#e2dfeb;
+}
+
+a{
+    margin:0;
+    padding:0;
+    color: var(--cor_titulo) !important;
+    text-decoration: none !important;
+}
+
+.Menu_Hover:hover{
+    color: var(--cor_paragrafo) !important;
+}
+
+h2{
+    color:var(--cor_titulo);
+    padding-bottom:10px;
+    font-weight: bold;
+}
+
+p{
+    color: var(--cor_paragrafo);
+    font-size: 0.9em;
+}
+
+
+li, ol{
+    list-style: none;
+    color: var(--cor_paragrafo);
+}
+
+html{
+    background-color: var(--cor_background_escuro);
+    height: 100%;
+    margin:0;
+    padding:0;    
+}
+
+body {
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+
+/* Container */
+#Container {
+    margin: 0;
+    padding:0;
+    width: 100%;         
+    font-family: 'gilroy_light';
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* #endregion */
+
+/* #region | Itens Flutuantes xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+    /* Container */
+    #Role_Baixo{
+        position: relative;
+        top: 400px;
+        left:79%;
+        z-index: 1;
+    }
+
+    /* Inner Container */
+    #Teste{
+        position: absolute;
+    }
+
+    /* Svg */
+    #Role_Baixo img{
+        height: 18rem;
+    }
+
+/* #endregion */
+
+/*  #region | Header xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+    /* Container */
+    #Header {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        min-height: 500px;
+        background-image: url('../images/jpg/Foto_Mariana_Ramacciotti.jpg');   
+        background-repeat: no-repeat;    
+        background-size: 80rem;
+        background-attachment: fixed;
+        background-position: 53%;   
+    }
+
+    /* #region | Linha 1 | Cv =================================================================================================== */
+        
+        /* Container */
+        #Header_Linha_1{
+            display: none;
+        }
+
+    /* #endregion */    
+
+    /* #region | Linha 2 | Echo + Título + Curriculo =================================================================================================== */
+        
+        /* Container */
+        #Header_Linha_2{
+            flex:1;
+            display: flex;
+            flex-wrap: nowrap;
+            min-height: 520px;
+        }        
+
+            /* #region | Coluna 1 | Echo ------------------------------------------------------------------------------------*/
+            
+            /* Container */
+            #Coluna_Echo{ 
+                padding-top:30px;
+                padding-left:40px;
+                display: flex;            
+            }       
+
+                /* Elemento */
+                #Texto_Echo > img{
+                    height: 14rem;
+                }
+            
+            /* #endregion */ 
+
+            /* #region | Coluna 2 | Título ------------------------------------------------------------------------------------*/
+            
+            /* Container */
+            #Coluna_Titulo{           
+            }   
+            
+                /* #region Linha 1 | Menu ............................................................................................*/
+                    
+                    /* Container */
+                    #Titulo_Menu{
+                        display: flex; 
+                        align-items: center;  
+                        justify-content: center;   
+                        padding-top:10px;    
+                        padding-left:22px;    
+                    }
+
+                        /* Lista */
+                        #Titulo_Menu > ol{    
+                            display: flex; 
+                            flex-direction: row;   
+                            align-items: center;
+                            justify-content: center;  
+                            padding-top:10px;     
+                            padding-bottom:10px;  
+                            text-align: center;     
+                        }
+                        
+                        /* Lista */
+                        #Titulo_Menu > ol > li{
+                            margin-right: 10px;
+                            font-size: 0.85em;
+                            font-weight: bold;      
+                        } 
+
+                /* #endregion */ 
+            
+                /* #region Linha 2 | Título (SVG) ............................................................................................*/
+                    
+                    /* Container */
+                    #Titulo_Site{
+                        display: flex; 
+                        align-items: center;  
+                        justify-content: center; 
+                        padding-top:210px;
+                    }   
+
+                    /* Elemento */
+                    #Titulo_Grande{
+                        display: flex; 
+                        flex-direction: row;   
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;  
+                    }  
+
+                    /* Elemento */
+                    #Titulo_Grande > img{
+                        width: 32em;
+                    } 
+                    
+                    /* Elemento */
+                    .Titulo_Sessao{
+                        display: flex; 
+                        flex-direction: row;   
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;  
+                        font-size: 1.3em;
+                        font-weight: bold;
+                        padding-top:20px;
+                        padding-bottom:20px;
+                    }
+
+                    /* Elemento */
+                    #Titulo_Pequeno > img{
+                        width: 23em;
+                    } 
+
+                /* #endregion */ 
+
+            /* #endregion */ 
+
+            /* #region | Coluna 3 | Currículo ------------------------------------------------------------------------------------*/
+        
+            /* Container */
+            #Coluna_Curriculo{  
+                display:flex;        
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: flex-end;
+            }  
+            
+                /* #region Linha 1 | Hamburguer ............................................................................................*/
+                
+                    /* Container */
+                    #Linha_Hamburguer{
+                        display:none;
+                    }
+
+                /* #endregion */ 
+            
+                /* #region Linha 2 | Currículo ............................................................................................*/
+                
+                    /* Container */
+                    #Linha_Curriculo{
+                        min-height: 10%;
+                        display:flex;        
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        padding-right:30px;
+                        padding-top:20px;
+                    }
+
+                    .Transicao_Cv:hover{
+                        transform: translateY(20%);
+                        transition: all .4s;
+                    }
+
+                /* #endregion */ 
+
+                /* #region Linha 3 | Bolinhas ............................................................................................*/
+                
+                    /* Container */
+                    #Linha_Bolinhas{
+                        min-height: 90%;
+                        display:flex;        
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        align-items: center; /* Alinhar verticalmente */
+                        padding-right:30px;
+                        color:white;
+                    
+                    }
+
+                /* #endregion */ 
+
+        /* #endregion */ 
+    
+    /* #endregion */
+
+    /* #region | Linha 3 | Redes Sociais =================================================================================================== */
+        
+        /* Container */
+        #Header_Linha_3{
+            flex:1;
+            display:flex;
+            flex-direction: row;
+            justify-content: flex-end;              
+            min-height: 60px;
+            text-align: center;
+            padding-right: 40px;
+        }
+
+        .Rede_Social{
+            flex:1;
+            max-width: 40px;  
+        }
+
+    /* #endregion */                   
+
+/* #endregion */     
+
+/*  #region | Sobre xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+    /* Container */  
+    #Sobre{
+        display: flex;   
+        padding-top:60px;   
+        background-image: url('../images/jpg/Foto_Mariana_Ramacciotti.jpg');      
+        background-repeat: no-repeat;    
+        background-size: 80rem;
+        background-attachment: fixed;  
+        background-position: 53%;
+        /*box-shadow: inset 0px -120px 130px 0px #100E17;*/
+    }   
+
+        /* #region > Coluna 1 (Título SVG) ----------------------------------------------------------------------------------------------------------------------------*/
+        
+            /* Container */
+            #Sobre_Titulo{
+                display: flex;
+                flex-direction: column;
+                max-width: 300px; 
+            }
+
+            /* Elemento */
+            #Sobre_Titulo img{
+                height: 22rem;                
+            }
+        
+        /* #endregion */    
+
+        /* #region > Coluna 2 (Descrição) ----------------------------------------------------------------------------------------------------------------------------*/
+                
+                /* Container */
+                #Sobre_Descricao{
+                    padding-right:50px;
+                }
+
+                /* #region > Linha 1 (Foto + Subtitulo) .......................................................................................................*/
+                
+                    /* Container */
+                    #Descricao_Linha_1{
+                        display: flex;
+                        justify-content: center;
+                        padding-top:20px;
+                    }
+
+                        /* Elemento ---------------------------------------------------*/
+                        #Sobre_Foto{
+                            display: flex;
+                            justify-content: center; 
+                            align-items: center;                           
+                            min-width: 130px;                            
+                        }
+
+                        #Sobre_Foto img{
+                            height: 150px;                            
+                        }
+
+                        #Foto_Perfil{
+                            border-radius:100%;
+                            border: 2px solid var(--cor_titulo);
+                            background-color: var(--cor_titulo);
+                        }
+
+                        /* Elemento ---------------------------------------------------*/
+                        #Sobre_Subtitulo{
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            min-width: 130px;
+                            padding-top:20px;
+                        }
+
+                        #Sobre_Subtitulo h2{
+                            padding-left: 20px;
+                            font-size: 1.2em;
+                            width: 100%;
+                            font-weight: bold;
+                        }
+
+                /* #endregion */   
+
+                /* #region > Linha 2 (Parágrafo) .......................................................................................................*/
+                    
+                    /* Container */
+                    #Descricao_Linha_2{
+                        padding-top:40px;
+                        padding-bottom:20px;
+                        padding-right: 40px;
+                    }
+
+                        /* Elemento */
+                        #Descricao_Linha_2 p {
+                            text-align: justify;
+                            color:var(--cor_paragrafo);
+                        }
+
+                /* #endregion */
+
+                /* #region > Linha 3 (Linguagens) .......................................................................................................*/
+                    
+                    /* Container */
+                    #Descricao_Linha_3{
+                        display: flex;
+                        align-items: center; /* Vertical */
+                        justify-content: center; /* Horizontal */
+                        gap:10px;
+                        margin-right: 20px;
+                        margin-bottom:40px;
+                    }        
+
+                    /* Elemento */
+                    .Linguagem{
+                        display: flex;
+                        align-items: center; /* Vertical */
+                        justify-content: center; /* Horizontal */
+                        border: 2px solid var(--cor_paragrafo);
+                        min-width: 119px;
+                        border-radius: 5px;
+                        padding-top:5px;
+                        padding-bottom:5px;
+                        color:var(--cor_paragrafo);                   
+                    }
+
+                    .Transicao_Linguagem:hover{
+                        transform: translateY(-15%);
+                        transition: all .5s;
+                    }   
+
+            /* #endregion */    
+            
+        
+    /* #endregion */  
+
+/* #endregion */
+
+/*  #region | Projetos xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+   
+    /* Container */
+    #Projetos{
+        padding-bottom: 40px;        
+    }                
+
+    /* #region | Linha 1 =====================================================================================================================*/
+        
+        /* Container */
+        #Projetos_Linha_1{
+            flex: 1;            
+            display: flex;  
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 20px;   
+            padding-left:40px;
+            padding-right: 40px;  
+            font-size: 1.2em;                   
+        }
+
+        /* #endregion */
+
+    /* #region | Linha 2 =====================================================================================================================*/
+            
+        /* Container */
+        #Projetos_Linha_2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Coluna 1 -------------------------------------------------------------------------------------------------------------------*/
+        
+        /* Container */
+        #Container_Projetos{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-left:40px;
+            margin-right:40px;
+            padding-top:40px;
+            padding-bottom:10px;
+            border-radius: 5px;
+            box-shadow: 0px 5px 39px 2px rgba(15,13,21,0.22);
+            column-gap:30px;
+            padding-right:40px;
+            padding-left:40px;
+            border: 2px solid var(--cor_paragrafo);
+            background-color: transparent;
+        }
+
+        /* Elemento | Botão */
+        .Botao_Projeto{
+            flex:1;
+            height: 200px;     
+            min-width: 250px;
+            padding-top: 35px;
+            padding-bottom: 40px;
+            border-radius: 8px;
+            text-align: center; 
+            cursor: pointer; 
+            margin-bottom:30px;
+            border: 2px solid var(--cor_paragrafo);
+            background-color:transparent;
+        }
+
+        /* Elemento | Hover */
+        .Transicao_Botao:hover{
+            transform: translateY(-5%);
+            transition: all .4s;
+        }        
+
+        /* Elemento | Icone */
+        .Botao_Icone{
+            height: 70px;
+            width: 70px;
+            margin-bottom:15px; 
+        }
+
+        /* Elemento | Título */
+        .Botao_Titulo{
+            font-weight: bold;
+            font-size: 1.3em;
+            color:var(--cor_titulo);
+            margin-bottom:-5px;
+        }
+
+        /* Elemento | Descrição */
+        .Botao_Descricao{
+            font-size: 0.80em;
+            color:var(--cor_paragrafo);
+        }        
+
+    /* #endregion */
+
+/* #endregion */        
+
+/*  #region | Footer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+   
+    /* Container */
+    #Footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom:20px;
+    }   
+
+/* #endregion */  
+
+/*  #region | Resoluções xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+/* + */
+@media (max-width: 900px){
+
+    /* #region Sobre ---------------------------------------------------------------------------------------------------------------*/
+
+        #Sobre_Subtitulo{
+            padding-top:40px;
+            text-align: center;
+        }
+
+        #Sobre_Subtitulo h2{
+            padding-left: 0px;
+            font-size: 1.2em;
+        }
+
+        /* Container */
+        #Descricao_Linha_2{
+            padding-top:20px;
+        }
+
+        /* Container */
+        #Descricao_Linha_3{
+            display: flex;
+            align-items: center; /* Vertical */
+            justify-content: center; /* Horizontal */
+        }  
+
+        #Role_Baixo{
+            display: none;
+        }
+
+    /* #endregion */    
+}
+
+/* Tablet */
+@media (max-width: 770px){
+
+    /* #region Header ---------------------------------------------------------------------------------------------------------------*/
+
+        /* Elemento */
+        #Titulo_Pequeno > img{
+            width: 22rem;
+        }
+
+        /* Container */
+        #Header_Linha_3{
+            justify-content: center; 
+            margin-left: -24px;
+        }
+
+        /* Container */
+        #Linha_Hamburguer{
+            min-height: 10%;
+            display:flex;        
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-right:30px;
+            padding-top:20px;
+        }
+
+        /* Container */
+        #Header_Linha_3{
+            padding-right: 12px;
+        }
+
+        /* Container */
+        #Header {
+            background-position: 53%;   
+        }  
+
+    /* #endregion */  
+
+    /* #region Sobre ---------------------------------------------------------------------------------------------------------------*/
+    
+        /* Container */
+        #Sobre{
+            padding: 0px 0px 0px 0px;  
+            background-position: 53%;    
+        }
+
+        #Sobre_Foto img{
+            height: 150px; 
+            margin-right: 10px;                           
+        }
+
+        /* Elemento */
+        #Sobre_Svg img{
+            display:none;
+        }
+        
+        /* Container */
+        #Sobre_Descricao{
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 50px 10px 50px;
+        }
+        
+        /* Container */
+        #Descricao_Linha_2{
+            padding-top:40px;            
+            margin-right: 0px 0px 0px 0px;
+            padding-right: 0px;
+        }
+
+        /* Container */
+        #Sobre_Titulo{
+            display:none;
+        }    
+
+        /* Container */
+        #Sobre{
+            padding-bottom: 20px;
+        }
+
+        /* Container */
+        #Sobre_Descricao{
+            padding-top:15px;
+        }
+
+        /* Container */
+        #Descricao_Linha_3{
+            justify-content: center; /* Horizontal */
+        } 
+        
+    /* #endregion*/    
+
+    /* #region Projetos ---------------------------------------------------------------------------------------------------------------*/
+     
+        /* Elemento | Botão */
+        .Botao_Projeto{ 
+            min-width: 270px;
+        }
+
+        /* Container */
+        #Role_Baixo{
+            display: none;
+        }
+
+        /* Container */
+        #Projetos_Linha_1{
+            padding: 25px 0 15px 0;
+        }
+
+        /* Container */
+         #Descricao_Linha_3{
+            margin-bottom: 10px;
+        } 
+
+
+    /* #endregion */    
+}
+
+/* Celular */
+@media (max-width: 576px){
+
+    /* #region Header ---------------------------------------------------------------------------------------------------------------*/
+
+        /* Elemento */
+        #Titulo_Pequeno > img{
+            margin-top:-53px;
+            width: 22rem;
+        }
+
+        /* Container */
+        #Header_Linha_1{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: flex-end;
+            padding-right:30px;
+            padding-top:20px;
+        }
+
+        /* Container */
+        #Header_Linha_2{
+            min-height: 465px;
+        } 
+
+
+        #Linha_Curriculo{
+            display:none;
+        }
+
+        /* Container */
+        #Header_Linha_3{
+            justify-content: center; 
+            padding-top:2px;
+        }
+
+    /* #endregion */    
+    
+    /* #region Sobre ---------------------------------------------------------------------------------------------------------------*/
+
+        /* Container */
+        #Sobre{
+            padding-bottom: 0px;
+        }
+
+        /* Container */
+        #Sobre_Descricao{
+            padding-top:15px;
+            padding-bottom:30px;
+        }  
+
+        /* Container */
+        #Role_Baixo{
+            display: none;
+        }        
+
+        /* Container */
+        #Descricao_Linha_2{
+            padding: 15px 0 15px 0;
+        }
+
+        /* Container */
+        #Descricao_Linha_3{
+            margin-right: 0px;
+            margin-bottom: 10px;
+        } 
+    
+        /* #endregion */
+
+    /* #region Projetos ---------------------------------------------------------------------------------------------------------------*/
+    
+        /* Container */
+        #Projetos_Linha_1{
+            padding: 25px 0 15px 0;
+        }
+
+    /* #endregion */
+}
+
+/* Menor */
+@media (max-width: 400px){
+
+    /* #region Header ---------------------------------------------------------------------------------------------------------------*/
+
+        /* Elemento */
+        #Titulo_Pequeno > img{
+            margin-top:20px;
+            width: 18rem;
+        }
+
+    /* #endregion */  
+
+    /* #region Sobre ---------------------------------------------------------------------------------------------------------------*/
+
+        /* Container */
+        #Sobre{
+            padding-bottom: 20px;
+        }
+
+        /* Container */
+        #Sobre_Descricao{
+            padding-bottom:15px;
+        }
+
+        /* Container */
+        #Descricao_Linha_3{
+            margin-right: 0px;
+        } 
+
+    /* #endregion */  
+
+    /* #region Projetos ---------------------------------------------------------------------------------------------------------------*/
+    
+        /* Container */
+        #Projetos_Linha_1{
+            padding: 25px 0 15px 0;
+        }
+
+        /* Container */
+        #Descricao_Linha_3{
+            margin-bottom: 10px;
+        } 
+
+    /* #endregion */
+
+}
+
+/* #endregion */   
+
