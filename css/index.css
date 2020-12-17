@@ -39,7 +39,7 @@ h2{
 
 p{
     color: var(--cor_paragrafo);
-    font-size: 0.9em;
+    font-size: 0.9em;  
 }
 
 
@@ -59,6 +59,7 @@ body {
     height: 100%;
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 /* Container */
@@ -73,27 +74,97 @@ body {
 
 /* #endregion */
 
-/* #region | Itens Flutuantes xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* #region | Itens Flutuantes xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
+    /* #region FLutuante Rolagem =======================================================================================================================*/
+        
+        /* Container */
+        #Flutuante_Rolagem{
+            position: relative;
+            top: 400px;
+            left:77%;
+            z-index: 1;            
+        }
+
+            /* Inner Container */
+            #Rolagem_Container{
+                position: absolute;
+            }
+
+            /* Svg */
+            #Rolagem_Container img{
+                height: 18rem;
+            }
+
+    /* #endregion */    
+
+    /* #region FLutuante Echo =======================================================================================================================*/
+        
     /* Container */
-    #Role_Baixo{
+    #Flutuante_Echo{
         position: relative;
-        top: 400px;
-        left:79%;
+        top: 20px;
+        left:29px;
+        z-index: 1;   
+    }
+
+        /* Inner Container */
+        #Echo_Container{
+            position: absolute;
+        }
+
+        /* Svg */
+        #Echo_Container img{
+            height: 12rem;
+        }
+
+    /* #endregion */    
+
+    /* #region FLutuante Curriculo =======================================================================================================================*/
+        
+    /* Container */
+    #Flutuante_Curriculo{
+        position: relative;
+        display:flex;
+        flex-direction: column;        
+        width: 100vw;
+        height: auto;
+        align-items: flex-end;
         z-index: 1;
+        padding-right: 48px;        
     }
 
-    /* Inner Container */
-    #Teste{
-        position: absolute;
-    }
+        /* Inner Container */
+        #Curriculo_Container{
+            position: absolute;
+            height: auto;
+            padding-top:20px;
+        }
 
-    /* Svg */
-    #Role_Baixo img{
-        height: 18rem;
-    }
+        /* Svg */
+        #Curriculo_Container img{
+            height: 4rem;            
+        }
+
+    /* #endregion */ 
 
 /* #endregion */
+
+/*  #region | Background xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+
+    /* Container */
+    #Background{
+        background-image: url('../images/jpg/Capa.jpg');   
+        background-repeat: no-repeat;    
+        background-size: 1280px 720px;
+        background-position-x:50%;
+        background-position-y:-55px;
+        background-attachment: fixed;
+        padding: 0 0 0 0;
+        margin: 0 0 0 0; 
+    }
+
+/*  #endregion */ 
 
 /*  #region | Header xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 
@@ -102,210 +173,115 @@ body {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        min-height: 500px;
-        background-image: url('../images/jpg/Foto_Mariana_Ramacciotti.jpg');   
-        background-repeat: no-repeat;    
-        background-size: 80rem;
-        background-attachment: fixed;
-        background-position: 53%;   
+        height: 610px;   
     }
 
-    /* #region | Linha 1 | Cv =================================================================================================== */
-        
-        /* Container */
-        #Header_Linha_1{
-            display: none;
+    /* #region Menu ( Linha 1 - Menu ) ===============================================================================================================================*/
+
+    /* Container */
+    #Header_Menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;   
+        margin: 0 0;     
+    }
+
+        /* Elemento */
+        #Lista_Menu li{
+            padding-top:15px;
+            padding-bottom:15px;      
+            font-size: 0.85em; 
+            font-weight: bold; 
         }
 
-    /* #endregion */    
+        /* Elemento */
+        #Lista_Menu li a{
+            margin: 5px;
+        }
 
-    /* #region | Linha 2 | Echo + Título + Curriculo =================================================================================================== */
-        
-        /* Container */
-        #Header_Linha_2{
-            flex:1;
-            display: flex;
-            flex-wrap: nowrap;
-            min-height: 520px;
-        }        
+        /* Elemento */
+        #Menu_Curriculo{
+            display:none;
+        }
 
-            /* #region | Coluna 1 | Echo ------------------------------------------------------------------------------------*/
-            
-            /* Container */
-            #Coluna_Echo{ 
-                padding-top:30px;
-                padding-left:40px;
-                display: flex;            
-            }       
+        #Coluna_Redes_Sociais a:hover{
+            transform: translateY(-15%);
+            transition: all .4s;
+        }
 
-                /* Elemento */
-                #Texto_Echo > img{
-                    height: 14rem;
-                }
-            
-            /* #endregion */ 
-
-            /* #region | Coluna 2 | Título ------------------------------------------------------------------------------------*/
-            
-            /* Container */
-            #Coluna_Titulo{           
-            }   
-            
-                /* #region Linha 1 | Menu ............................................................................................*/
-                    
-                    /* Container */
-                    #Titulo_Menu{
-                        display: flex; 
-                        align-items: center;  
-                        justify-content: center;   
-                        padding-top:10px;    
-                        padding-left:22px;    
-                    }
-
-                        /* Lista */
-                        #Titulo_Menu > ol{    
-                            display: flex; 
-                            flex-direction: row;   
-                            align-items: center;
-                            justify-content: center;  
-                            padding-top:10px;     
-                            padding-bottom:10px;  
-                            text-align: center;     
-                        }
-                        
-                        /* Lista */
-                        #Titulo_Menu > ol > li{
-                            margin-right: 10px;
-                            font-size: 0.85em;
-                            font-weight: bold;      
-                        } 
-
-                /* #endregion */ 
-            
-                /* #region Linha 2 | Título (SVG) ............................................................................................*/
-                    
-                    /* Container */
-                    #Titulo_Site{
-                        display: flex; 
-                        align-items: center;  
-                        justify-content: center; 
-                        padding-top:210px;
-                    }   
-
-                    /* Elemento */
-                    #Titulo_Grande{
-                        display: flex; 
-                        flex-direction: row;   
-                        align-items: center;
-                        justify-content: center;
-                        text-align: center;  
-                    }  
-
-                    /* Elemento */
-                    #Titulo_Grande > img{
-                        width: 32em;
-                    } 
-                    
-                    /* Elemento */
-                    .Titulo_Sessao{
-                        display: flex; 
-                        flex-direction: row;   
-                        align-items: center;
-                        justify-content: center;
-                        text-align: center;  
-                        font-size: 1.3em;
-                        font-weight: bold;
-                        padding-top:20px;
-                        padding-bottom:20px;
-                    }
-
-                    /* Elemento */
-                    #Titulo_Pequeno > img{
-                        width: 23em;
-                    } 
-
-                /* #endregion */ 
-
-            /* #endregion */ 
-
-            /* #region | Coluna 3 | Currículo ------------------------------------------------------------------------------------*/
-        
-            /* Container */
-            #Coluna_Curriculo{  
-                display:flex;        
-                flex-direction: row;
-                justify-content: flex-end;
-                align-items: flex-end;
-            }  
-            
-                /* #region Linha 1 | Hamburguer ............................................................................................*/
-                
-                    /* Container */
-                    #Linha_Hamburguer{
-                        display:none;
-                    }
-
-                /* #endregion */ 
-            
-                /* #region Linha 2 | Currículo ............................................................................................*/
-                
-                    /* Container */
-                    #Linha_Curriculo{
-                        min-height: 10%;
-                        display:flex;        
-                        flex-direction: row;
-                        justify-content: flex-end;
-                        align-items: flex-end;
-                        padding-right:30px;
-                        padding-top:20px;
-                    }
-
-                    .Transicao_Cv:hover{
-                        transform: translateY(20%);
-                        transition: all .4s;
-                    }
-
-                /* #endregion */ 
-
-                /* #region Linha 3 | Bolinhas ............................................................................................*/
-                
-                    /* Container */
-                    #Linha_Bolinhas{
-                        min-height: 90%;
-                        display:flex;        
-                        flex-direction: row;
-                        justify-content: flex-end;
-                        align-items: center; /* Alinhar verticalmente */
-                        padding-right:30px;
-                        color:white;
-                    
-                    }
-
-                /* #endregion */ 
-
-        /* #endregion */ 
-    
     /* #endregion */
 
-    /* #region | Linha 3 | Redes Sociais =================================================================================================== */
-        
+    /* #region Titulo ( Linha 2 - Titulo ) ===============================================================================================================================*/
+
+    /* Container */
+    #Header_Titulo{
+        display: flex;    
+        height: 510px;
+        padding-top: 20px;
+    }
+
         /* Container */
-        #Header_Linha_3{
-            flex:1;
-            display:flex;
-            flex-direction: row;
-            justify-content: flex-end;              
-            min-height: 60px;
-            text-align: center;
-            padding-right: 40px;
+        #Coluna_Titulo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;       
+            padding: 0 0;
         }
 
-        .Rede_Social{
-            flex:1;
-            max-width: 40px;  
+        /* Elemento */
+        #Coluna_Titulo img{
+            height: 6rem;
         }
 
-    /* #endregion */                   
+        /* Elemento */
+        #Titulo_Grande{
+            display: flex;
+        }
+
+        /* Elemento */
+        #Titulo_Pequeno{
+           display: none;
+        }
+
+    /* #endregion */      
+   
+    /* #region Redes ( Linha 3 - Redes Sociais ) ===============================================================================================================================*/
+
+    /* Container */  
+    #Header_Redes_Sociais{
+        display: flex;
+    }
+
+        /* Container */  
+        #Coluna_Redes_Sociais{
+            flex:1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center; 
+            padding-top:0;
+            padding-right: 30px;  
+        }
+
+        /* Container */  
+        #Coluna_Redes_Sociais a img{
+            margin-left: 5px;
+            margin-right: 5px;
+            height: 30px;
+        }
+
+    /* #endregion */   
+
+/* #endregion */     
+
+/*  #region | Main xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+    
+    /* Container */
+    #Main{
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
 
 /* #endregion */     
 
@@ -315,11 +291,8 @@ body {
     #Sobre{
         display: flex;   
         padding-top:60px;   
-        background-image: url('../images/jpg/Foto_Mariana_Ramacciotti.jpg');      
-        background-repeat: no-repeat;    
-        background-size: 80rem;
-        background-attachment: fixed;  
-        background-position: 53%;
+        padding: 0 0 40px 0;
+        margin: 0 0 0 0;  
         /*box-shadow: inset 0px -120px 130px 0px #100E17;*/
     }   
 
@@ -344,6 +317,8 @@ body {
                 /* Container */
                 #Sobre_Descricao{
                     padding-right:50px;
+                    padding-bottom:0;
+                    margin: 0 0 0 0 ;
                 }
 
                 /* #region > Linha 1 (Foto + Subtitulo) .......................................................................................................*/
@@ -417,7 +392,6 @@ body {
                         justify-content: center; /* Horizontal */
                         gap:10px;
                         margin-right: 20px;
-                        margin-bottom:40px;
                     }        
 
                     /* Elemento */
@@ -431,12 +405,7 @@ body {
                         padding-top:5px;
                         padding-bottom:5px;
                         color:var(--cor_paragrafo);                   
-                    }
-
-                    .Transicao_Linguagem:hover{
-                        transform: translateY(-15%);
-                        transition: all .5s;
-                    }   
+                    }       
 
             /* #endregion */    
             
@@ -450,26 +419,48 @@ body {
     /* Container */
     #Projetos{
         padding-bottom: 40px;        
-    }                
-
-    /* #region | Linha 1 =====================================================================================================================*/
-        
+    }   
+    
+    /* #region | Coluna 1 =====================================================================================================================*/
+    
         /* Container */
-        #Projetos_Linha_1{
-            flex: 1;            
-            display: flex;  
+        #Projetos_Container{
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
             align-items: center;
-            justify-content: center;
-            padding-top: 30px;
-            padding-bottom: 20px;   
-            padding-left:40px;
-            padding-right: 40px;  
-            font-size: 1.2em;                   
+            border-radius: 5px;
+            box-shadow: 0px 5px 39px 2px rgba(15,13,21,0.22);
+            column-gap:30px;
+            border: 2px solid var(--cor_paragrafo);
+            padding: 0 50px;
+            margin: 0 50px;
         }
 
         /* #endregion */
 
-    /* #region | Linha 2 =====================================================================================================================*/
+        /* #region | Linha 1 ----------------------------------------------------------------------------------------------------------------------*/
+            
+            /* Container */
+            #Projetos_Linha_1{
+                flex: 1;            
+                display: flex;  
+                align-items: center;
+                justify-content: center;
+                padding: 40px 0;
+                margin: 0 0 0 0;                       
+            }
+
+            /* Elemento */
+            #Projetos_Linha_1 h2{
+                padding: 0 0 0 0;
+                margin: 0 0 0 0;
+                font-size: 1.5em; 
+            }
+
+            /* #endregion */
+
+        /* #region | Linha 2 --------------------------------------------------------------------------------------------------------------------------*/
             
         /* Container */
         #Projetos_Linha_2{
@@ -478,68 +469,56 @@ body {
             align-items: center;
         }
 
-        /* Coluna 1 -------------------------------------------------------------------------------------------------------------------*/
+        /* #region Coluna 1 ..............................................................................................................................*/
         
         /* Container */
-        #Container_Projetos{
+        #Projetos_Botoes{
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             align-items: center;
-            margin-left:40px;
-            margin-right:40px;
-            padding-top:40px;
-            padding-bottom:10px;
-            border-radius: 5px;
-            box-shadow: 0px 5px 39px 2px rgba(15,13,21,0.22);
+            padding: 0 0 0 0;
             column-gap:30px;
-            padding-right:40px;
-            padding-left:40px;
-            border: 2px solid var(--cor_paragrafo);
-            background-color: transparent;
+            margin: 0 0 0 0 ;
         }
 
-        /* Elemento | Botão */
-        .Botao_Projeto{
-            flex:1;
-            height: 200px;     
-            min-width: 250px;
-            padding-top: 35px;
-            padding-bottom: 40px;
-            border-radius: 8px;
-            text-align: center; 
-            cursor: pointer; 
-            margin-bottom:30px;
-            border: 2px solid var(--cor_paragrafo);
-            background-color:transparent;
-        }
+            /* Elemento | Botão */
+            .Botao_Projeto{
+                flex:1;
+                height: 200px;     
+                min-width: 250px;
+                padding-top: 35px;
+                padding-bottom: 40px;
+                border-radius: 8px;
+                text-align: center; 
+                cursor: pointer; 
+                margin-bottom:30px;
+                border: 2px solid var(--cor_paragrafo);
+                background-color:transparent;
+            }
 
-        /* Elemento | Hover */
-        .Transicao_Botao:hover{
-            transform: translateY(-5%);
-            transition: all .4s;
-        }        
+            /* Elemento | Icone */
+            .Botao_Icone{
+                height: 70px;
+                width: 70px;
+                margin-bottom:15px; 
+            }
 
-        /* Elemento | Icone */
-        .Botao_Icone{
-            height: 70px;
-            width: 70px;
-            margin-bottom:15px; 
-        }
+            /* Elemento | Título */
+            .Botao_Titulo{
+                font-weight: bold;
+                font-size: 1.3em;
+                color:var(--cor_titulo);
+                margin-bottom:-5px;
+            }
 
-        /* Elemento | Título */
-        .Botao_Titulo{
-            font-weight: bold;
-            font-size: 1.3em;
-            color:var(--cor_titulo);
-            margin-bottom:-5px;
-        }
-
-        /* Elemento | Descrição */
-        .Botao_Descricao{
-            font-size: 0.80em;
-            color:var(--cor_paragrafo);
-        }        
+            /* Elemento | Descrição */
+            .Botao_Descricao{
+                font-size: 0.80em;
+                color:var(--cor_paragrafo);
+            }  
+            
+        /* #endregion */    
 
     /* #endregion */
 
@@ -558,10 +537,20 @@ body {
 
 /* #endregion */  
 
-/*  #region | Resoluções xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+/*  #region | Resoluções xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
-/* + */
-@media (max-width: 900px){
+/* Laptops + */
+@media (min-width: 1500px){
+
+    /* Container */
+    #Background{
+        background-size: 1920px 1080px;
+    }
+}
+
+
+/* Laptops + */
+@media (max-width: 992px){    
 
     /* #region Sobre ---------------------------------------------------------------------------------------------------------------*/
 
@@ -571,13 +560,21 @@ body {
         }
 
         #Sobre_Subtitulo h2{
-            padding-left: 0px;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
             font-size: 1.2em;
+        }
+
+        #Sobre_Descricao{
+            padding: 0 0 0 0;
+            margin-right: 40px;
         }
 
         /* Container */
         #Descricao_Linha_2{
-            padding-top:20px;
+            padding-top:40px;
+            padding-left:0px;
+            padding-right: 0px;
         }
 
         /* Container */
@@ -587,63 +584,67 @@ body {
             justify-content: center; /* Horizontal */
         }  
 
-        #Role_Baixo{
+        #Flutuante_Rolagem{
             display: none;
+        }
+
+        #Titulo_Site{
+            background-color: red;
         }
 
     /* #endregion */    
 }
 
 /* Tablet */
-@media (max-width: 770px){
+@media (max-width: 768px){
 
-    /* #region Header ---------------------------------------------------------------------------------------------------------------*/
+    /* Container */
+    #Background{
+    }
+
+    /* #region Header -----------------------------------------------------------------------------------------------------------------------------*/
 
         /* Elemento */
-        #Titulo_Pequeno > img{
-            width: 22rem;
+        #Titulo_Grande{
+            display: none;
         }
 
-        /* Container */
-        #Header_Linha_3{
-            justify-content: center; 
-            margin-left: -24px;
+        /* Elemento */
+        #Titulo_Pequeno{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center;
+            margin-top:-15px;
         }
 
-        /* Container */
-        #Linha_Hamburguer{
-            min-height: 10%;
-            display:flex;        
-            flex-direction: row;
-            justify-content: flex-end;
-            align-items: flex-end;
-            padding-right:30px;
-            padding-top:20px;
+        /* Elemento */
+        #Titulo_Pequeno img{            
+            height: 8rem;
         }
 
-        /* Container */
-        #Header_Linha_3{
-            padding-right: 12px;
+        /* Container */  
+        #Coluna_Redes_Sociais{
+            justify-content: center;
+            padding: 0 0;   
         }
-
-        /* Container */
-        #Header {
-            background-position: 53%;   
-        }  
+     
 
     /* #endregion */  
 
-    /* #region Sobre ---------------------------------------------------------------------------------------------------------------*/
+    /* #region Sobre ----------------------------------------------------------------------------------------------------------------------------*/
     
         /* Container */
         #Sobre{
-            padding: 0px 0px 0px 0px;  
-            background-position: 53%;    
+            padding: 0px 0px 40px 0px;  
+            background-position: 50%;    
         }
 
+        /* Elemento */
         #Sobre_Foto img{
-            height: 150px; 
-            margin-right: 10px;                           
+            height: 150px;                         
         }
 
         /* Elemento */
@@ -656,58 +657,82 @@ body {
             width: auto;
             display: flex;
             flex-direction: column;
-            padding: 40px 50px 10px 50px;
+            padding: 0px 40px;
+            margin: 0 0 0 0;
+        }
+
+        /* Container */
+        #Descricao_Linha_1{            
+            margin: 0px 0px 0px 0px;
+            padding-top:20px;
+            padding-bottom:10px;
         }
         
         /* Container */
-        #Descricao_Linha_2{
-            padding-top:40px;            
-            margin-right: 0px 0px 0px 0px;
-            padding-right: 0px;
-        }
-
-        /* Container */
-        #Sobre_Titulo{
-            display:none;
-        }    
-
-        /* Container */
-        #Sobre{
-            padding-bottom: 20px;
-        }
-
-        /* Container */
-        #Sobre_Descricao{
-            padding-top:15px;
+        #Descricao_Linha_2{          
+            margin: 0 0 0 0;
+            padding: 30px 0 0 0;
         }
 
         /* Container */
         #Descricao_Linha_3{
             justify-content: center; /* Horizontal */
+            margin: 0px 0px 0px 0px;
+            padding: 20px 0 0px 0 ;
         } 
+
+        /* Container */
+        #Sobre_Titulo{
+            display:none;
+        } 
+        
+        #Sobre_Subtitulo{
+            width: auto;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+
+        #Sobre_Subtitulo h2{
+            padding: 0 10px;
+            margin: 0 0 0 0;
+        }
+
         
     /* #endregion*/    
 
-    /* #region Projetos ---------------------------------------------------------------------------------------------------------------*/
+    /* #region Projetos ---------------------------------------------------------------------------------------------------------------------------*/
      
-        /* Elemento | Botão */
-        .Botao_Projeto{ 
-            min-width: 270px;
+        #Projetos_Container{
+            padding: 0 40px;
         }
 
         /* Container */
-        #Role_Baixo{
+        #Flutuante_Rolagem{
             display: none;
         }
 
         /* Container */
         #Projetos_Linha_1{
-            padding: 25px 0 15px 0;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 0 40px 0;
+        }
+
+        /* Container */
+        #Projetos_Linha_2{
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+
+        /* Elemento */
+        #Titulo_Sessao h2{
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
         }
 
         /* Container */
          #Descricao_Linha_3{
-            margin-bottom: 10px;
+            margin-bottom: 0px;
         } 
 
 
@@ -715,14 +740,32 @@ body {
 }
 
 /* Celular */
-@media (max-width: 576px){
+@media (max-width: 618px){
+    
+    /* Container */
+    #Background{
+    }
 
-    /* #region Header ---------------------------------------------------------------------------------------------------------------*/
+    /* #region Itens Flutuantes ---------------------------------------------------------------------------------------------------------------*/
+
+        /* Elemento */
+        #Flutuante_Echo{
+            display: none;
+        }
+
+    /* #endregion */
+    
+    /* #region Header -------------------------------------------------------------------------------------------------------------------------*/
 
         /* Elemento */
         #Titulo_Pequeno > img{
-            margin-top:-53px;
+            margin-top:-13px;
             width: 22rem;
+        }
+
+        /* Elemento */
+        #Titulo_Site {
+            padding: 50% 0 0 0;
         }
 
         /* Container */
@@ -737,10 +780,11 @@ body {
 
         /* Container */
         #Header_Linha_2{
-            min-height: 465px;
+            height: 450px;
+            background-color: blue;
         } 
 
-
+        /* Elemento */
         #Linha_Curriculo{
             display:none;
         }
@@ -748,62 +792,155 @@ body {
         /* Container */
         #Header_Linha_3{
             justify-content: center; 
-            padding-top:2px;
+            padding: 0 15px 0 0;
+            margin: 0 0 0 0;            
+        }
+
+        /* Container */
+        #Header {
+            background-position: 50%;   
+            padding: 0 0 0 0;
+        } 
+
+        /* Elemento */
+        #Menu_Curriculo{
+            display:inline;
+        }
+
+        /* Elemento */
+        #Flutuante_Curriculo{
+            display: none;
+        }
+        
+        /* Elemento */
+        #Lista_Menu li a{
+            font-size: 0.9em;
         }
 
     /* #endregion */    
     
-    /* #region Sobre ---------------------------------------------------------------------------------------------------------------*/
+    /* #region Sobre -------------------------------------------------------------------------------------------------------------------------*/
 
         /* Container */
         #Sobre{
-            padding-bottom: 0px;
+            padding-bottom: 50px;
         }
 
         /* Container */
         #Sobre_Descricao{
-            padding-top:15px;
-            padding-bottom:30px;
+            padding-top:30px;
+            display: flex;
+            flex-direction: column;
         }  
 
         /* Container */
-        #Role_Baixo{
+        #Flutuante_Rolagem{
             display: none;
-        }        
+        }  
+
+        /* Elemento */
+        #Sobre_Foto img {
+            margin: 5px -14px 0 0;
+            padding: 0 0 0 0;
+        }
+
+        /* Elemento */
+        #Sobre_Subtitulo{      
+            padding-bottom: 40px;
+            padding-top:45px;
+            min-width: 280px;            
+        }
+        
+        /* Container */
+        #Descricao_Linha_1{
+            padding: 0 0 0 0;
+            margin: 0 0 0 -13px;
+            min-width: 280px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
         /* Container */
         #Descricao_Linha_2{
-            padding: 15px 0 15px 0;
+            padding: 0px 0 0px 0;
         }
 
         /* Container */
         #Descricao_Linha_3{
             margin-right: 0px;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
         } 
     
         /* #endregion */
 
-    /* #region Projetos ---------------------------------------------------------------------------------------------------------------*/
+    /* #region Projetos ---------------------------------------------------------------------------------------------------------------------------*/
     
         /* Container */
         #Projetos_Linha_1{
-            padding: 25px 0 15px 0;
+            padding-top:40px;
+            padding-bottom:40px;
+            margin: 0 0 0 0;
+        }
+
+        .Titulo_Sessao {
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+            font-size: 1.4em;
         }
 
     /* #endregion */
 }
 
-/* Menor */
-@media (max-width: 400px){
+/* Celular - */
+@media (max-width: 600px){
+
+    #Sobre{
+        padding-bottom:41px;
+    }
+
+}
+
+/* Celular -- */
+@media (max-width: 460px){
+
+    /* Container */
+    #Background{
+        background-position-x:53%;
+    }
+
+    /* #region Itens Flutuantes ---------------------------------------------------------------------------------------------------------------*/
+
+        /* Container */
+        #Flutuante_Rolagem, #Flutuante_Echo{
+            display:none;
+        }
+
+        /* Container */
+        #Flutuante_Curriculo{
+            padding-right: 45px;        
+        }
+
+        /* Inner Container */
+        #Curriculo_Container{
+            position: absolute;
+            height: auto;
+            padding-top:20px;
+        }
+
+    /* #endregion */  
 
     /* #region Header ---------------------------------------------------------------------------------------------------------------*/
 
-        /* Elemento */
-        #Titulo_Pequeno > img{
-            margin-top:20px;
-            width: 18rem;
+        /* Container */
+        #Header_Menu{
         }
+
+        /* Elemento */
+        #Coluna_Titulo img{
+            height: 5.8rem;
+        }        
 
     /* #endregion */  
 
@@ -827,10 +964,35 @@ body {
     /* #endregion */  
 
     /* #region Projetos ---------------------------------------------------------------------------------------------------------------*/
-    
+        
+    /* Container */
+    #Projetos_Container{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0px 5px 39px 2px rgba(15,13,21,0.22);
+        border: 2px solid var(--cor_paragrafo);
+        padding: 0 40px;
+        margin: 0 50px;
+    }
+
         /* Container */
-        #Projetos_Linha_1{
-            padding: 25px 0 15px 0;
+        #Projetos_Linha_1 h2{
+            font-size: 1.3em;
+        }
+
+        /* Container */
+        #Projetos_Linha_2{     
+            max-width: 380px;
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
+        }
+
+        #Projeto_Botoes{
+            padding: 0 0 0 0;
+            background-color: red;     
         }
 
         /* Container */
@@ -838,9 +1000,73 @@ body {
             margin-bottom: 10px;
         } 
 
+        /* Elemento | Botão */
+        .Botao_Projeto{
+            flex:1;
+            height: 200px;     
+            min-width: 200px;
+            padding-top: 35px;
+            padding-bottom: 40px;
+            border-radius: 8px;
+            text-align: center; 
+            cursor: pointer; 
+            margin-bottom:30px;
+            border: 2px solid var(--cor_paragrafo);
+            background-color:transparent;
+        }
+
+        /* Elemento | Icone */
+        .Botao_Icone{
+            height: 60px;
+            width: 60px;
+            margin-bottom:15px; 
+        }
+
+        /* Elemento | Título */
+        .Botao_Titulo{
+            font-weight: bold;
+            font-size: 1.2em;
+            color:var(--cor_titulo);
+            margin-bottom:-5px;
+        }
+
+        /* Elemento | Descrição */
+        .Botao_Descricao{
+            font-size: 0.80em;
+            color:var(--cor_paragrafo);
+        }  
+
+
     /* #endregion */
 
 }
 
 /* #endregion */   
 
+/*  #region | Animações xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+    /* Redes Sociais */
+    #Coluna_Redes_Sociais a:hover{
+        transform: translateY(-15%);
+        transition: all .4s;
+    }
+
+    /* Curriculo */
+    #Curriculo_Container a img:hover{
+        transform: translateY(15%);
+        transition: all .4s;
+    }
+
+    /* Linguagens */
+    #Descricao_Linha_3 a:hover{
+        transform: translateY(-15%);
+        transition: all .5s;
+    }
+
+    /* Botões Projetos */    
+    #Projetos_Botoes button:hover{
+        transform: translateY(-7%);
+        transition: all .6s;
+    }
+
+/* #endregion */

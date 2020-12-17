@@ -38,375 +38,351 @@
 
     <!-- Container Site-->
     <div id="Container" class="container-fluid">
-        
-        <!-- Header xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <header id="Header" class="col">
-                
-            <!-- Elemento Flutuante =====================================================================================================================-->
-            <div id="Role_Baixo">
+
+        <!-- Elemento Flutuante xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+        <div id="Elementos_Flutuantes">
+
+            <!-- Role para baixo ===================================================================================================================================-->
+            <div id="Flutuante_Rolagem">
 
                 <!-- Elemento -->
-                <div id="Teste">
+                <div id="Rolagem_Container">
                     <img src="./images/svg/role_baixo.svg" alt="">
                 </div>
                 
             </div>
 
-            <!-- Main | Linha 1 (Cv) =====================================================================================================================-->
-            <div id="Header_Linha_1" class="row">
+            <!-- Olá, seja bem vindo ===================================================================================================================================-->
+            <div id="Flutuante_Echo">
 
-                <!-- Botão 1 -->
-                <a class="Transicao_Cv" href="Mariana_Ramacciotti_Currículo.pdf" download>
-                    <img src="./images/svg/icone_cv.svg" alt="Mariana Ramacciotti Curriculo" style="width: 33px;height: 33px;">
-                </a>
-                                
+                <div id="Echo_Container">
+                    <!-- Elemento -->
+                    <img src="./images/svg/texto_echo.svg" alt="Olá! Seja bem vindo(a)!">
+                </div>
+
             </div>
 
-            <!-- Main | Linha 2 (Echo + Titulo + Curriculo) =====================================================================================================================-->
-            <div id="Header_Linha_2" class="row">
+            <!-- Curriculo ===================================================================================================================================-->
+            <div id="Flutuante_Curriculo">
 
-                <!-- Coluna 1 ------------------------------------------------------------------------------------------------------------------------>
-                <div id="Coluna_Echo" class="col-lg-2 col-md-2 col-sm-3 d-none d-sm-block">
-                    
-                    <!-- Linha 1 ( Echo ) -------------------------------------------------------------------------------------------->
-                    <div class="row" id="Texto_Echo">
+                <!-- Container -->
+                <div id="Curriculo_Container">
 
-                        <!-- Elemento -->
-                        <img src="./images/svg/texto_echo.svg" alt="Olá! Seja bem vindo(a)!">
-
-                    </div>    
+                    <!-- Botão -->
+                    <a href="Mariana_Ramacciotti_Currículo.pdf" download>
+                        <img src="./images/svg/icone_cv.svg" alt="Mariana Ramacciotti Curriculo" style="width: 33px;height: 33px;">
+                    </a>
 
                 </div>
 
-                <!-- Coluna 2 -------------------------------------------------------------------------------------------------------------------------->
-                <div id="Coluna_Titulo" class="col-lg-8 col-md-8 col-sm-6">
+            </div>
+
+        </div>
+
+        <!-- Site xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
+        <div id="Background">
+        
+            <!-- Header ===================================================================================================================================-->
+            <header id="Header" class="col">
                     
-                    <!-- Linha 1 ...................................................................................................................-->
-                    <nav id="Titulo_Menu" class="row d-none d-lg-block d-md-block">
+                <!-- Linha 1 ==================================================================================================================.-->
+                <nav id="Header_Menu" class="row">
 
-                        <!-- Elemento -->
-                        <ol id="Lista_Menu" class="list-group list-group-horizontal1">
-                            <li><a class="Menu_Hover" href="#Header">HOME</a></li>
-                            <li><a class="Menu_Hover" href="#Sobre">SOBRE</a></li>
-                            <li><a class="Menu_Hover" href="#Projetos">PROJETOS</a></li>                    
-                        </ol>
+                    <!-- Elemento -->
+                    <ol id="Lista_Menu" class="list-group list-group-horizontal">
+                        <li><a class="Menu_Hover" href="#Header">HOME</a></li>
+                        <li><a class="Menu_Hover" href="#Sobre">SOBRE</a></li>
+                        <li><a class="Menu_Hover" href="#Projetos">PROJETOS</a></li>  
+                        <li id="Menu_Curriculo"><a class="Menu_Hover" href="Mariana_Ramacciotti_Currículo.pdf" download>CURRICULO</a></li>   
+                    </ol>
 
-                    </nav>
+                </nav>
 
-                    <!-- Linha 2 ...................................................................................................................-->
-                    <div id="Titulo_Site" class="row">
-                        
-                        <div id="Titulo_Grande" class="d-none d-lg-block d-xl-block d-md-block">
+                <!-- Linha 2 ==================================================================================================================.-->
+                <div id="Header_Titulo" class="row">            
+
+                    <!-- Coluna 1 --------------------------------------------------------------------------------------------------->
+                    <div id="Coluna_Titulo" class="col"> 
+
+                        <div id="Titulo_Grande">
                             <img src="./images/svg/titulo_site_grande.svg" alt="Título Mariana Ramacciotti FullStack Developer">
                         </div>
 
-                        <div id="Titulo_Pequeno" class="d-md-none d-xl-none d-lg-none">
+                        <div id="Titulo_Pequeno">
                             <img src="./images/svg/titulo_site_pequeno.svg" alt="Título Mariana Ramacciotti FullStack Developer">
                         </div>
                     
                     </div>
+
                 </div>
 
-                <!-- Coluna 3 ------------------------------------------------------------------------------------------------------------------------>
-                <div id="Coluna_Curriculo" class="col-lg-2 col-md-2 col-sm-3 d-none d-sm-block">
+                <!-- Linha 3 ==================================================================================================================.-->
+                <div id="Header_Redes_Sociais" class="row">  
 
-                    <!-- Linha 1 ...................................................................................................-->
-                    <div id="Linha_Curriculo" class="row">
+                    <!-- Coluna 1 -------------------------------------------------------------------------------------------------------------->
+                    <div id="Coluna_Redes_Sociais" class="col">
 
                         <!-- Botão 1 -->
-                        <a class="Transicao_Cv" href="Mariana_Ramacciotti_Currículo.pdf" download>
-                            <img src="./images/svg/icone_cv.svg" alt="Mariana Ramacciotti Curriculo" style="width: 33px;height: 33px;">
+                        <a href="https://github.com/Ramacciotti" target="_blank">
+                            <img src="./images/svg/icone_github.svg" alt="Mariana Ramacciotti Github">
+                        </a>
+
+                        <!-- Botão 2 -->
+                        <a href="https://www.linkedin.com/in/marianaramacciotti/" target="_blank">
+                            <img src="./images/svg/icone_linkedin.svg" alt="Mariana Ramacciotti Linkedin">
+                        </a> 
+                        
+                        <!-- Botão 3 -->    
+                        <a href="https://api.whatsapp.com/send?phone=5511953631297&text=Gostaria de saber mais sobre meu trabalho? Entre em contato! :]" target="_blank">
+                            <img src="./images/svg/icone_whatsapp.svg" alt="Mariana Ramacciotti WhatsApp">
                         </a>
 
                     </div>
+                    
+                </div>
 
-                    <!-- Linha 2 ..............................................................................................-->
-                    <div id="Linha_Bolinhas" class="row">
-                        <ol>
-                            <li>○</li>
-                            <li>○</li>
-                            <li>○</li>
-                            <li>○</li>
-                            <li>○</li>
-                            <li>○</li>
-                        </ol>
+            </header>
+
+            <!-- Main ===================================================================================================================================-->
+            <main id="Main" class="col">
+
+                <!-- Sobre ==============================================================================================================================-->
+                <div id="Sobre" class="row">
+
+                    <!-- Coluna 1 (Titulo) ----------------------------------------------------------------------------------------------------->
+                    <div id="Sobre_Titulo" class="col">
+
+                        <!--Titulo SVG -->
+                        <img src="./images/svg/titulo_sobre.svg" alt="Sobre">          
+
+                    </div>
+
+                    <!-- Coluna 2 (Descricao) ----------------------------------------------------------------------------------------------------->
+                    <div id="Sobre_Descricao" class="col">
+                        
+                        <!-- Linha 1 (Foto + Subtitulo) ......................................................................................-->
+                        <div id="Descricao_Linha_1" class="row">
+                            
+                            <!-- Coluna Foto ------------------------------------------------------------------------------------------------------------->
+                            <div id="Sobre_Foto" class="col-3">
+
+                                <!-- Foto -->
+                                <img id="Foto_Perfil" src="images/jpg/profile_photo.png" alt="Foto de Mariana Ramacciotti">
+
+                            </div>
+
+                            <!-- Coluna Subtitulo --------------------------------------------------------------------------------------------------------->
+                            <div id="Sobre_Subtitulo" class="col-9">
+
+                                <!-- Subtitulo -->
+                                <h2>System.out.print ( "Vamos nos conhecer melhor?" );</h2>
+
+                            </div>
+
+                        </div>
+
+                        <!-- Linha 2 (Paragrafo) ......................................................................................-->
+                        <div id="Descricao_Linha_2" class="row">
+                            <p>Após trabalhar 5 anos como designer, minha curiosidade acabou por me levar por outro caminho: a área de programação. Ao terminar a faculdade de Design de Games em 2018 percebi que de todas as coisas que tinha aprendido, o que realmente me fazia abrir um sorriso era quando queria adicionar uma função complexa nos meus projetos e conseguia fazer o código rodar sem erros! Quando entreguei um game de investigação em terceira pessoa completo para o meu TCC, percebi que aquele tinha sido o meu primeiro passo!</p>
+                            <p>No ano seguinte, passei a estudar outros caminhos desta área tão vasta. A pandemia veio no começo de 2020 e meu primeiro instinto foi criar um aplicativo em JAVA chamado SubliminApp, que preenchia a tela do usuário com mensagens subliminares positivas. A ideia era tentar, de alguma forma, acolher as pessoas durante esse período tão complicado; mas o que eu não esperava era que o App chegaria a mais de 100 downloads e teria tantos comentários positivos! Foi aqui que senti que, de fato, estava indo pelo caminho certo.</p>
+                            <p>Em Agosto de 2020, decidi me matricular no curso do SENAI 'Técnico de Informática para Web' e desde então tenho aprendido muito mais sobre front-end e back-end: Programação cliente-side; Criação e manipulação de banco de dados; Modelagem de sistemas; Desenvolvimento de sistemas web; Teste, implantação e manutenção de sistemas; Informática aplicada e muitos outros conhecimentos!</p>
+                        </div>
+
+                        <!-- Linha 3 (Linguagens) ......................................................................................-->
+                        <div id="Descricao_Linha_3" class="row">
+                            
+                            <a href="https://pt.wikipedia.org/wiki/C_Sharp" target="_blank"><div class="Linguagem" class="col">C#</div></a>
+                            <a href="https://pt.wikipedia.org/wiki/PHP" target="_blank"><div class="Linguagem" class="col">PHP</div></a>
+                            <a href="https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o)" target="_blank"><div class="Linguagem" class="col">JAVA</div></a>
+                            <a href="https://pt.wikipedia.org/wiki/HTML5" target="_blank"><div class="Linguagem" class="col">HTML5</div></a>
+                            <a href="https://pt.wikipedia.org/wiki/CSS3" target="_blank"><div class="Linguagem" class="col">CSS3</div></a>
+                            <a href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank"><div class="Linguagem" class="col">JAVASCRIPT</div></a>
+                            <a href="https://pt.wikipedia.org/wiki/Bootstrap_(framework_front-end)" target="_blank"><div class="Linguagem" class="col">BOOTSTRAP</div></a>
+                            <a href="https://pt.wikipedia.org/wiki/Vue.js" target="_blank"><div class="Linguagem" class="col">VUE</div></a>
+                        
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <!-- Projetos ===============================================================================================================================-->
+                <div id="Projetos" class="row">
+
+                    <!-- Coluna 1 ----------------------------------------------------------------------------------------------------------------------------->
+                    <div id="Projetos_Container" class="col">
+
+                        <!-- Linha 1 (Título) ...................................................................................................-->
+                        <div id="Projetos_Linha_1" class="row">
+
+                            <!-- Título-->
+                            <h2 class="Titulo_Sessao">&lt ! -- Meus Projetos -- ></h2>
+
+                        </div>                    
+
+                        <!-- Linha 2 (Botões) ...................................................................................................-->
+                        <div id="Projetos_Linha_2" class="row">
+
+                            <!-- Container Botões -->
+                            <div id="Projetos_Botoes" class="col">
+
+                                <!-- Botão Subliminapp --------------------------------------------------------------------------------------------------------------------->
+                                <button class="Botao_Projeto Animation_Cima">
+
+                                    <!-- Link -->
+                                    <a href="https://play.google.com/store/apps/details?id=com.subliminapp" target="_blank">
+
+                                        <!-- Icone -->
+                                        <img class="Botao_Icone" src="images/svg/icone_subliminapp.svg" alt="Aplicativos com mensagens subliminares">
+                                        <!-- Titulo -->
+                                        <h2 class="Botao_Titulo"> SubliminApp </h2>
+                                        <!-- Descricao -->
+                                        <p class="Botao_Descricao">Aplicativo do Google Play</p> 
+
+                                    </a>
+
+                                </button>
+
+                                <!-- Botão Cadastro / Login--------------------------------------------------------------------------------------------------------------------->
+                                <button class="Botao_Projeto Animation_Cima">
+
+                                    <!-- Link -->
+                                    <a href="https://ramacciottidatabase.000webhostapp.com/site_login/index.php" target="_blank">
+
+                                        <!-- Icone -->
+                                        <img class="Botao_Icone" src="images/svg/icone_login.svg" alt="Sistema de Login e Cadastro de Clientes">
+                                        <!-- Titulo -->
+                                        <h2 class="Botao_Titulo">Cadastro / Login</h2>
+                                        <!-- Descricao -->
+                                        <p class="Botao_Descricao">Sistema com Mysql Online</p> 
+                                        
+                                    </a>
+
+                                </button>
+
+                                <!-- Botão Clima --------------------------------------------------------------------------------------------------------------------->
+                                <button class="Botao_Projeto Animation_Cima">
+                                    
+                                    <!-- Link -->
+                                    <a href="https://ramacciotti.github.io/aplicativo_clima/" target="_blank">
+
+                                        <!-- Icone -->
+                                        <img class="Botao_Icone" src="images/svg/icone_clima.svg" alt="Com a permissão do usuário, mostra o clima da sua região">
+                                        <!-- Titulo -->
+                                        <h2 class="Botao_Titulo">Clima Atual</h2>
+                                        <!-- Descricao -->
+                                        <p class="Botao_Descricao">Aplicativo com API externo</p> 
+                                        
+                                    </a>
+
+                                </button>
+
+                                <!-- Botão Disclosure --------------------------------------------------------------------------------------------------------------------->
+                                <button class="Botao_Projeto Animation_Cima">
+
+                                    <!-- Link -->
+                                    <a href="https://jogosimpacta.itch.io/disclosure" target="_blank">
+
+                                        <!-- Icone -->
+                                        <img class="Botao_Icone" src="images/svg/icone_disclosure.svg" alt="Game Stealth em 3D">
+                                        <!-- Titulo -->
+                                        <h2 class="Botao_Titulo">Disclosure</h2>
+                                        <!-- Descricao -->
+                                        <p class="Botao_Descricao">Jogo Stealth em 3D</p> 
+                                        
+                                    </a>
+
+                                </button>
+                                
+                                <!-- Botão Formulário --------------------------------------------------------------------------------------------------------------------->
+                                <button class="Botao_Projeto Animation_Cima">
+
+                                    <!-- Link -->
+                                    <a href="https://ramacciottidatabase.000webhostapp.com/site_formulario/index.php" target="_blank">
+
+                                        <!-- Icone -->
+                                        <img class="Botao_Icone" src="images/svg/icone_formulario.svg" alt="Formulário de pesquisa sobre política de uso da internet">
+                                        <!-- Titulo -->
+                                        <h2 class="Botao_Titulo">Formulário com SQL</h2>
+                                        <!-- Descricao -->
+                                        <p class="Botao_Descricao">Cadastro de usuários e respostas</p> 
+                                        
+                                    </a>
+
+                                </button>
+
+                                <!-- Botão Ecommerce --------------------------------------------------------------------------------------------------------------------->
+                                <button class="Botao_Projeto Animation_Cima">
+
+                                    <!-- Link -->
+                                    <a href="https://ramacciotti.github.io/site_ecommerce/" target="_blank">
+
+                                        <!-- Icone -->
+                                        <img class="Botao_Icone" src="images/svg/icone_ecommerce.svg" alt="Interface de um E-commerce">
+                                        <!-- Titulo -->
+                                        <h2 class="Botao_Titulo">E-Commerce</h2>
+                                        <!-- Descricao -->
+                                        <p class="Botao_Descricao">Interface de uma loja online</p> 
+                                        
+                                    </a>
+                                    
+                                </button>
+
+                                <!-- Botão Instagram --------------------------------------------------------------------------------------------------------------------->
+                                <button class="Botao_Projeto Animation_Cima">
+
+                                    <!-- Link -->
+                                    <a href="https://ramacciotti.github.io/site_login_instagram/index.html" target="_blank">
+
+                                        <!-- Icone -->
+                                        <img class="Botao_Icone" src="images/svg/icone_instagram.svg" alt="Interface da Página Inicial do Instagram">
+                                        <!-- Titulo -->
+                                        <h2 class="Botao_Titulo">Interface Instagram</h2>
+                                        <!-- Descricao -->
+                                        <p class="Botao_Descricao">Recriado com flexbox</p> 
+                                        
+                                    </a>
+
+                                </button>
+
+                                <!-- Botão Formulário --------------------------------------------------------------------------------------------------------------------->
+                                <button class="Botao_Projeto Animation_Cima">
+
+                                    <!-- Link -->
+                                    <a href="https://ramacciotti.github.io/site_netflix/" target="_blank">
+
+                                        <!-- Icone -->
+                                        <img class="Botao_Icone" src="images/svg/icone_netflix.svg" alt="Landing Page da Netflix, recriado com Flexbox">
+                                        <!-- Titulo -->
+                                        <h2 class="Botao_Titulo">Interface Netflix</h2>
+                                        <!-- Descricao -->
+                                        <p class="Botao_Descricao">Recriado com flexbox e JQuery</p> 
+                                        
+                                    </a>
+
+                                </button>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
+            </main>         
 
-            <!-- Main | Linha 3 (Redes Sociais) =====================================================================================================================-->
-            <div id="Header_Linha_3" class="row">
+            <!-- Footer ===================================================================================================================================-->
+            <footer id="Footer" class="col">
 
-                <!-- Coluna 1 ------------------------------------------------------------------------------------------------------------------------>
-                <div class="Rede_Social Transicao_Linguagem">     
-
-                    <!-- Botão 1 -->
-                    <a href="https://github.com/Ramacciotti" target="_blank">
-                        <p style="margin-left:10px;"><img src="./images/svg/icone_github.svg" alt="Mariana Ramacciotti Github"></p>
-                    </a>
+                <!-- Elemento -->
+                <div id="Footer_Coluna_1">
+                    <p>"comment": "Desenvolvido por Mariana Ramacciotti"</p>
+                </div>
                 
-                </div>
+            </footer>
 
-                <!-- Coluna 2 ------------------------------------------------------------------------------------------------------------------------>
-                <div class="Rede_Social Transicao_Linguagem"> 
-
-                    <!-- Botão 2 -->
-                    <a href="https://www.linkedin.com/in/marianaramacciotti/" target="_blank">
-                        <p style="margin-left:10px;"><img src="./images/svg/icone_linkedin.svg" alt="Mariana Ramacciotti Linkedin"></p>
-                    </a> 
-
-                </div>
-
-                <!-- Coluna 3 ------------------------------------------------------------------------------------------------------------------------>
-                <div class="Rede_Social Transicao_Linguagem">     
-
-                    <!-- Botão 3 -->    
-                    <a href="https://api.whatsapp.com/send?phone=5511953631297&text=Gostaria de saber mais sobre meu trabalho? Entre em contato! :]" target="_blank">
-                        <p style="margin-left:10px;"><img src="./images/svg/icone_whatsapp.svg" alt="Mariana Ramacciotti WhatsApp"></p>                        
-                    </a>         
-
-                </div>
-
-            </div>             
-
-        </header>
-
-        <!-- Main xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <main id="Main" class="col">
-
-            <!-- Sobre ==============================================================================================================================-->
-            <div id="Sobre" class="row">
-
-                <!-- Coluna 1 (Titulo) ----------------------------------------------------------------------------------------------------->
-                <div id="Sobre_Titulo" class="col">
-
-                    <!--Titulo SVG -->
-                    <img src="./images/svg/titulo_sobre.svg" alt="Sobre">          
-
-                </div>
-
-                <!-- Coluna 2 (Descricao) ----------------------------------------------------------------------------------------------------->
-                <div id="Sobre_Descricao" class="col">
-                    
-                    <!-- Linha 1 (Foto + Subtitulo) ......................................................................................-->
-                    <div id="Descricao_Linha_1" class="row">
-                        
-                        <!-- Coluna Foto ------------------------------------------------------------------------------------------------------------->
-                        <div id="Sobre_Foto" class="col-3">
-
-                            <!-- Foto -->
-                            <img id="Foto_Perfil" src="images/jpg/profile_photo.png" alt="Foto de Mariana Ramacciotti">
-
-                        </div>
-
-                        <!-- Coluna Subtitulo --------------------------------------------------------------------------------------------------------->
-                        <div id="Sobre_Subtitulo" class="col-9">
-
-                            <!-- Subtitulo -->
-                            <h2>System.out.print ( "Vamos nos conhecer melhor?" );</h2>
-
-                        </div>
-
-                    </div>
-
-                    <!-- Linha 2 (Paragrafo) ......................................................................................-->
-                    <div id="Descricao_Linha_2" class="row">
-                        <p>Após trabalhar 5 anos como designer, minha curiosidade acabou por me levar por outro caminho: a área de programação. Ao terminar a faculdade de Design de Games em 2018 percebi que de todas as coisas que tinha aprendido, o que realmente me fazia abrir um sorriso era quando queria adicionar uma função complexa nos meus projetos e conseguia fazer o código rodar sem erros! Quando entreguei um game de investigação em terceira pessoa completo para o meu TCC, percebi que aquele tinha sido o meu primeiro passo!</p>
-                        <p>No ano seguinte, passei a estudar outros caminhos desta área tão vasta. A pandemia veio no começo de 2020 e meu primeiro instinto foi criar um aplicativo em JAVA chamado SubliminApp, que preenchia a tela do usuário com mensagens subliminares positivas. A ideia era tentar, de alguma forma, acolher as pessoas durante esse período tão complicado; mas o que eu não esperava era que o App chegaria a mais de 100 downloads e teria tantos comentários positivos! Foi aqui que senti que, de fato, estava indo pelo caminho certo.</p>
-                        <p>Em Agosto de 2020, decidi me matricular no curso do SENAI 'Técnico de Informática para Web' e desde então tenho aprendido muito mais sobre front-end e back-end: Programação cliente-side; Criação e manipulação de banco de dados; Modelagem de sistemas; Desenvolvimento de sistemas web; Teste, implantação e manutenção de sistemas; Informática aplicada e muitos outros conhecimentos!</p>
-                    </div>
-
-                    <!-- Linha 3 (Linguagens) ......................................................................................-->
-                    <div id="Descricao_Linha_3" class="row">
-                        
-                        <a class="Transicao_Linguagem" href="https://pt.wikipedia.org/wiki/C_Sharp" target="_blank"><div class="Linguagem" class="col">C#</div></a>
-                        <a class="Transicao_Linguagem" href="https://pt.wikipedia.org/wiki/PHP" target="_blank"><div class="Linguagem" class="col">PHP</div></a>
-                        <a class="Transicao_Linguagem" href="https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o)" target="_blank"><div class="Linguagem" class="col">JAVA</div></a>
-                        <a class="Transicao_Linguagem" href="https://pt.wikipedia.org/wiki/HTML5" target="_blank"><div class="Linguagem" class="col">HTML5</div></a>
-                        <a class="Transicao_Linguagem" href="https://pt.wikipedia.org/wiki/CSS3" target="_blank"><div class="Linguagem" class="col">CSS3</div></a>
-                        <a class="Transicao_Linguagem" href="https://pt.wikipedia.org/wiki/JavaScript" target="_blank"><div class="Linguagem" class="col">JAVASCRIPT</div></a>
-                        <a class="Transicao_Linguagem" href="https://pt.wikipedia.org/wiki/Bootstrap_(framework_front-end)" target="_blank"><div class="Linguagem" class="col">BOOTSTRAP</div></a>
-                        <a class="Transicao_Linguagem" href="https://pt.wikipedia.org/wiki/Vue.js" target="_blank"><div class="Linguagem" class="col">VUE</div></a>
-                    
-                    </div>
-                    
-                </div>
-
-            </div>
-
-            <!-- Projetos ===============================================================================================================================-->
-            <div id="Projetos">
-
-                <!-- Linha 1 (Título) ------------------------------------------------------------------------------------------------->
-                <div id="Projetos_Linha_1" class="row">
-
-                    <!-- Título-->
-                    <h2 class="Titulo_Sessao">&lt ! -- Meus Projetos -- ></h2>
-
-                </div>
-
-                <!-- Linha 2 (Botões) ------------------------------------------------------------------------------------------------->
-                <div id="Projetos_Linha_2" class="row">
-
-                    <!-- Container Botões -->
-                    <div id="Container_Projetos" class="col">
-
-                        <!-- Botão Subliminapp --------------------------------------------------------------------------------------------------------------------->
-                        <button class="Botao_Projeto Transicao_Botao">
-
-                            <!-- Link -->
-                            <a href="https://play.google.com/store/apps/details?id=com.subliminapp" target="_blank">
-
-                                <!-- Icone -->
-                                <img class="Botao_Icone" src="images/svg/icone_subliminapp.svg" alt="Aplicativos com mensagens subliminares">
-                                <!-- Titulo -->
-                                <h2 class="Botao_Titulo"> SubliminApp </h2>
-                                <!-- Descricao -->
-                                <p class="Botao_Descricao">Aplicativo do Google Play</p> 
-
-                            </a>
-
-                        </button>
-
-                        <!-- Botão Cadastro / Login--------------------------------------------------------------------------------------------------------------------->
-                        <button class="Botao_Projeto Transicao_Botao">
-
-                            <!-- Link -->
-                            <a href="https://ramacciottidatabase.000webhostapp.com/site_login/index.php" target="_blank">
-
-                                <!-- Icone -->
-                                <img class="Botao_Icone" src="images/svg/icone_login.svg" alt="Sistema de Login e Cadastro de Clientes">
-                                <!-- Titulo -->
-                                <h2 class="Botao_Titulo">Cadastro / Login</h2>
-                                <!-- Descricao -->
-                                <p class="Botao_Descricao">Sistema com Mysql Online</p> 
-                                
-                            </a>
-
-                        </button>
-
-                        <!-- Botão Clima --------------------------------------------------------------------------------------------------------------------->
-                        <button class="Botao_Projeto Transicao_Botao">
-                            
-                            <!-- Link -->
-                            <a href="https://ramacciotti.github.io/aplicativo_clima/" target="_blank">
-
-                                <!-- Icone -->
-                                <img class="Botao_Icone" src="images/svg/icone_clima.svg" alt="Com a permissão do usuário, mostra o clima da sua região">
-                                <!-- Titulo -->
-                                <h2 class="Botao_Titulo">Clima Atual</h2>
-                                <!-- Descricao -->
-                                <p class="Botao_Descricao">Aplicativo com API externo</p> 
-                                
-                            </a>
-
-                        </button>
-
-                        <!-- Botão Disclosure --------------------------------------------------------------------------------------------------------------------->
-                        <button class="Botao_Projeto Transicao_Botao">
-
-                            <!-- Link -->
-                            <a href="https://jogosimpacta.itch.io/disclosure" target="_blank">
-
-                                <!-- Icone -->
-                                <img class="Botao_Icone" src="images/svg/icone_disclosure.svg" alt="Game Stealth em 3D">
-                                <!-- Titulo -->
-                                <h2 class="Botao_Titulo">Disclosure</h2>
-                                <!-- Descricao -->
-                                <p class="Botao_Descricao">Jogo Stealth em 3D</p> 
-                                
-                            </a>
-
-                        </button>
-                        
-                        <!-- Botão Formulário --------------------------------------------------------------------------------------------------------------------->
-                        <button class="Botao_Projeto Transicao_Botao">
-
-                            <!-- Link -->
-                            <a href="https://ramacciottidatabase.000webhostapp.com/site_formulario/index.php" target="_blank">
-
-                                <!-- Icone -->
-                                <img class="Botao_Icone" src="images/svg/icone_formulario.svg" alt="Formulário de pesquisa sobre política de uso da internet">
-                                <!-- Titulo -->
-                                <h2 class="Botao_Titulo">Formulário com SQL</h2>
-                                <!-- Descricao -->
-                                <p class="Botao_Descricao">Cadastro de usuários e respostas</p> 
-                                
-                            </a>
-
-                        </button>
-
-                        <!-- Botão Ecommerce --------------------------------------------------------------------------------------------------------------------->
-                        <button class="Botao_Projeto Transicao_Botao">
-
-                            <!-- Link -->
-                            <a href="https://ramacciotti.github.io/site_ecommerce/" target="_blank">
-
-                                <!-- Icone -->
-                                <img class="Botao_Icone" src="images/svg/icone_ecommerce.svg" alt="Interface de um E-commerce">
-                                <!-- Titulo -->
-                                <h2 class="Botao_Titulo">E-Commerce</h2>
-                                <!-- Descricao -->
-                                <p class="Botao_Descricao">Interface de uma loja online</p> 
-                                
-                            </a>
-                            
-                        </button>
-
-                        <!-- Botão Instagram --------------------------------------------------------------------------------------------------------------------->
-                        <button class="Botao_Projeto Transicao_Botao">
-
-                            <!-- Link -->
-                            <a href="https://ramacciotti.github.io/site_login_instagram/index.html" target="_blank">
-
-                                <!-- Icone -->
-                                <img class="Botao_Icone" src="images/svg/icone_instagram.svg" alt="Interface da Página Inicial do Instagram">
-                                <!-- Titulo -->
-                                <h2 class="Botao_Titulo">Interface Instagram</h2>
-                                <!-- Descricao -->
-                                <p class="Botao_Descricao">Recriado com flexbox</p> 
-                                
-                            </a>
-
-                        </button>
-
-                        <!-- Botão Formulário --------------------------------------------------------------------------------------------------------------------->
-                        <button class="Botao_Projeto Transicao_Botao">
-
-                            <!-- Link -->
-                            <a href="https://ramacciotti.github.io/site_netflix/" target="_blank">
-
-                                <!-- Icone -->
-                                <img class="Botao_Icone" src="images/svg/icone_netflix.svg" alt="Landing Page da Netflix, recriado com Flexbox">
-                                <!-- Titulo -->
-                                <h2 class="Botao_Titulo">Interface Netflix</h2>
-                                <!-- Descricao -->
-                                <p class="Botao_Descricao">Recriado com flexbox e JQuery</p> 
-                                
-                            </a>
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </main>
-
-        <!-- Footer xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
-        <footer id="Footer" class="col">
-
-            <!-- Elemento -->
-            <div id="Footer_Coluna_1">
-                <p>"comment": "Desenvolvido por Mariana Ramacciotti"</p>
-            </div>
-            
-        </footer>
+        </div>
 
     </div>
 
