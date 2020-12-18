@@ -103,7 +103,7 @@ body {
     /* Container */
     #Flutuante_Echo{
         position: relative;
-        top: 20px;
+        top: 25px;
         left:29px;
         z-index: 1;   
     }
@@ -138,12 +138,12 @@ body {
         #Curriculo_Container{
             position: absolute;
             height: auto;
-            padding-top:20px;
+            padding-top:25px;
         }
 
         /* Svg */
         #Curriculo_Container img{
-            height: 4rem;            
+            height: 3.9rem;            
         }
 
     /* #endregion */ 
@@ -154,14 +154,15 @@ body {
 
     /* Container */
     #Background{
-        background-image: url('../images/jpg/Capa.jpg');   
+        background-image: url('../images/jpg/Capa_Grande.jpg');   
         background-repeat: no-repeat;    
         background-size: 1280px 720px;
         background-position-x:50%;
-        background-position-y:-55px;
+        background-position-y:-50px;
         background-attachment: fixed;
         padding: 0 0 0 0;
         margin: 0 0 0 0; 
+        overflow: hidden;
     }
 
 /*  #endregion */ 
@@ -173,7 +174,8 @@ body {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        height: 610px;   
+        height: 610px;  
+        padding: 0 0 0 0; 
     }
 
     /* #region Menu ( Linha 1 - Menu ) ===============================================================================================================================*/
@@ -184,20 +186,25 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;   
-        margin: 0 0;     
+        margin: 0 0;    
+        padding-top:20px;
+        padding-bottom:20px;  
     }
 
+        #Lista_Menu{
+            margin-left: 10px;
+        }
+
         /* Elemento */
-        #Lista_Menu li{
-            padding-top:15px;
-            padding-bottom:15px;      
+        #Lista_Menu li{                 
             font-size: 0.85em; 
             font-weight: bold; 
         }
 
         /* Elemento */
         #Lista_Menu li a{
-            margin: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
         }
 
         /* Elemento */
@@ -217,8 +224,8 @@ body {
     /* Container */
     #Header_Titulo{
         display: flex;    
-        height: 510px;
-        padding-top: 20px;
+        height: 500px;
+        padding-top: 13px;
     }
 
         /* Container */
@@ -232,7 +239,7 @@ body {
 
         /* Elemento */
         #Coluna_Titulo img{
-            height: 6rem;
+            height: 5.8rem;
         }
 
         /* Elemento */
@@ -261,7 +268,7 @@ body {
             justify-content: flex-end;
             align-items: center; 
             padding-top:0;
-            padding-right: 30px;  
+            padding-right: 50px;  
         }
 
         /* Container */  
@@ -548,7 +555,6 @@ body {
     }
 }
 
-
 /* Laptops + */
 @media (max-width: 992px){    
 
@@ -598,10 +604,7 @@ body {
 /* Tablet */
 @media (max-width: 768px){
 
-    /* Container */
-    #Background{
-    }
-
+    
     /* #region Header -----------------------------------------------------------------------------------------------------------------------------*/
 
         /* Elemento */
@@ -617,12 +620,12 @@ body {
             flex-direction: column;
             justify-content: center; /* Centraliza horizontalmente */
             align-items: center;
-            margin-top:-15px;
+            margin-top:-30px;
         }
 
         /* Elemento */
         #Titulo_Pequeno img{            
-            height: 8rem;
+            height: 7.5rem;
         }
 
         /* Container */  
@@ -742,10 +745,6 @@ body {
 /* Celular */
 @media (max-width: 618px){
     
-    /* Container */
-    #Background{
-    }
-
     /* #region Itens Flutuantes ---------------------------------------------------------------------------------------------------------------*/
 
         /* Elemento */
@@ -756,12 +755,6 @@ body {
     /* #endregion */
     
     /* #region Header -------------------------------------------------------------------------------------------------------------------------*/
-
-        /* Elemento */
-        #Titulo_Pequeno > img{
-            margin-top:-13px;
-            width: 22rem;
-        }
 
         /* Elemento */
         #Titulo_Site {
@@ -814,7 +807,7 @@ body {
         
         /* Elemento */
         #Lista_Menu li a{
-            font-size: 0.9em;
+            font-size: 1em;
         }
 
     /* #endregion */    
@@ -903,12 +896,7 @@ body {
 }
 
 /* Celular -- */
-@media (max-width: 460px){
-
-    /* Container */
-    #Background{
-        background-position-x:53%;
-    }
+@media (max-width: 460px){    
 
     /* #region Itens Flutuantes ---------------------------------------------------------------------------------------------------------------*/
 
@@ -934,7 +922,17 @@ body {
     /* #region Header ---------------------------------------------------------------------------------------------------------------*/
 
         /* Container */
-        #Header_Menu{
+        #Header{
+            height: 540px;   
+        }
+
+        #Lista_Menu li a {
+            font-size: 1em;
+        }
+
+        #Header_Titulo{
+            padding: 0 0 0 0;
+            margin: 0 0 0 0;
         }
 
         /* Elemento */
@@ -954,12 +952,32 @@ body {
         /* Container */
         #Sobre_Descricao{
             padding-bottom:15px;
+            padding-top:50px;
         }
 
         /* Container */
         #Descricao_Linha_3{
             margin-right: 0px;
         } 
+
+        #Sobre_Foto{
+            width: 100%;
+            padding-left: 27px;
+        }
+
+        #Sobre_Foto img{            
+            padding:0 0 0 0;
+            margin: 0 0 0 0;
+        }
+
+        #Foto_Perfil{
+            padding:0 0 0 0;
+            margin: 0 0 0 0;
+        }
+
+        #Sobre_Subtitulo h2{
+            padding-left: 20px;
+        }
 
     /* #endregion */  
 
@@ -980,7 +998,7 @@ body {
 
         /* Container */
         #Projetos_Linha_1 h2{
-            font-size: 1.3em;
+            font-size: 1.095em;
         }
 
         /* Container */
@@ -1039,6 +1057,19 @@ body {
 
     /* #endregion */
 
+    /* #region Footer ---------------------------------------------------------------------------------------------------------------*/
+        
+        /* Container */
+        #Footer{
+            padding: 0 30px 20px 30px;
+        }
+
+        /* Container */
+        #Footer_Coluna_1{        
+            text-align: center;
+        }
+
+        /* #endregion */
 }
 
 /* #endregion */   
