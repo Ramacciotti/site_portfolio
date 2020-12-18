@@ -154,7 +154,7 @@ body {
 
     /* Container */
     #Background{
-        background-image: url('../images/jpg/Capa_Grande.jpg');   
+        background-image: url('../images/jpg/Foto_Mariana_Ramacciotti.jpg');   
         background-repeat: no-repeat;    
         background-size: 1280px 720px;
         background-position-x:50%;
@@ -225,7 +225,8 @@ body {
     #Header_Titulo{
         display: flex;    
         height: 500px;
-        padding-top: 13px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
     }
 
         /* Container */
@@ -546,7 +547,7 @@ body {
 
 /*  #region | Resoluções xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
-/* Laptops + */
+/* Desktop + */
 @media (min-width: 1500px){
 
     /* Container */
@@ -557,7 +558,7 @@ body {
 
 /* Laptops + */
 @media (max-width: 992px){    
-
+    
     /* #region Sobre ---------------------------------------------------------------------------------------------------------------*/
 
         #Sobre_Subtitulo{
@@ -805,10 +806,6 @@ body {
             display: none;
         }
         
-        /* Elemento */
-        #Lista_Menu li a{
-            font-size: 1em;
-        }
 
     /* #endregion */    
     
