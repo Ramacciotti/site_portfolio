@@ -154,11 +154,11 @@ body {
 
     /* Container */
     #Background{
-        background-image: url('../images/jpg/Foto_Mariana_Ramacciotti.jpg');   
+        background-image: url('../images/jpg/Foto_Mariana_Ramacciotti-min.jpg');   
         background-repeat: no-repeat;    
         background-size: 1280px 720px;
         background-position-x:50%;
-        background-position-y:-50px;
+        background-position-y:-57px;
         background-attachment: fixed;
         padding: 0 0 0 0;
         margin: 0 0 0 0; 
@@ -548,11 +548,12 @@ body {
 /*  #region | Resoluções xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 /* Desktop + */
-@media (min-width: 1500px){
+@media (min-width: 1300px){
 
     /* Container */
     #Background{
-        background-size: 1920px 1080px;
+        background-size: 1536px 864px;
+        background-position-y:-97px;
     }
 }
 
@@ -604,9 +605,14 @@ body {
 
 /* Tablet */
 @media (max-width: 768px){
-
     
     /* #region Header -----------------------------------------------------------------------------------------------------------------------------*/
+
+        /* Elemento */
+        #Lista_Menu li{                 
+            font-size: 1em; 
+            font-weight: bold; 
+        }
 
         /* Elemento */
         #Titulo_Grande{
@@ -633,6 +639,13 @@ body {
         #Coluna_Redes_Sociais{
             justify-content: center;
             padding: 0 0;   
+        }
+
+        /* Container */  
+        #Coluna_Redes_Sociais a img{
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 35px;
         }
      
 
@@ -743,7 +756,7 @@ body {
     /* #endregion */    
 }
 
-/* Celular */
+/* Tablet - */
 @media (max-width: 618px){
     
     /* #region Itens Flutuantes ---------------------------------------------------------------------------------------------------------------*/
@@ -862,6 +875,13 @@ body {
             margin-right: 0px;
             margin-bottom: 0px;
         } 
+
+        /* Container */  
+        #Coluna_Redes_Sociais a img{
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 40px;
+        }
     
         /* #endregion */
 
@@ -883,7 +903,7 @@ body {
     /* #endregion */
 }
 
-/* Celular - */
+/* Tablet -- */
 @media (max-width: 600px){
 
     #Sobre{
@@ -892,8 +912,13 @@ body {
 
 }
 
-/* Celular -- */
+/* Celular - */
 @media (max-width: 460px){    
+
+    /* Container */
+    #Background{
+        background-position-x:51%;
+    }
 
     /* #region Itens Flutuantes ---------------------------------------------------------------------------------------------------------------*/
 
@@ -924,7 +949,7 @@ body {
         }
 
         #Lista_Menu li a {
-            font-size: 1em;
+            font-size: 0.9em;
         }
 
         #Header_Titulo{
@@ -935,7 +960,14 @@ body {
         /* Elemento */
         #Coluna_Titulo img{
             height: 5.8rem;
-        }        
+        }     
+        
+        /* Container */  
+        #Coluna_Redes_Sociais a img{
+            margin-left: 10px;
+            margin-right: 10px;
+            height: 40px;
+        }
 
     /* #endregion */  
 
@@ -959,7 +991,7 @@ body {
 
         #Sobre_Foto{
             width: 100%;
-            padding-left: 27px;
+            padding-left: 23px;
         }
 
         #Sobre_Foto img{            
