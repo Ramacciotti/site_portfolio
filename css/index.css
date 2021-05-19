@@ -46,6 +46,7 @@ p{
 li, ol{
     list-style: none;
     color: var(--cor_paragrafo);
+    font-size: 0.9rem;
 }
 
 html{
@@ -299,7 +300,7 @@ body {
     #Sobre{
         display: flex;   
         padding-top:60px;   
-        padding: 0 0 40px 0;
+        padding: 0 0 0 0;
         margin: 0 0 0 0;  
         /*box-shadow: inset 0px -120px 130px 0px #100E17;*/
     }   
@@ -379,7 +380,7 @@ body {
                     /* Container */
                     #Descricao_Linha_2{
                         padding-top:40px;
-                        padding-bottom:20px;
+                        padding-bottom:10px;
                         padding-right: 40px;
                     }
 
